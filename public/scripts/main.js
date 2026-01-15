@@ -72,45 +72,44 @@ function nextStory() {
   showStory(index);
 }
 
-// Gestion des popups pour la section enjeux
+// Gestion des popups pour la section enjeux (HOVER)
 document.addEventListener('DOMContentLoaded', function() {
   const points = document.querySelectorAll('.point[data-index]');
   const popups = document.querySelectorAll('.popup-card');
   
-  let activePopup = null;
-  
   points.forEach(point => {
-    point.addEventListener('click', function() {
+    // Au survol, afficher le popup
+    point.addEventListener('mouseenter', function() {
       const index = this.getAttribute('data-index');
       const popup = document.getElementById(`popup-${index}`);
       
-      // Désactiver l'ancien popup actif
-      if (activePopup && activePopup !== popup) {
-        activePopup.classList.remove('active');
-      }
+      // Masquer tous les autres popups
+      popups.forEach(p => p.classList.remove('active'));
       
-      // Toggle le popup actuel
-      if (popup.classList.contains('active')) {
-        popup.classList.remove('active');
-        activePopup = null;
-      } else {
-        popup.classList.add('active');
-        activePopup = popup;
-      }
+      // Afficher le popup correspondant
+      popup.classList.add('active');
+    });
+    
+    // Quand on quitte le point, masquer le popup
+    point.addEventListener('mouseleave', function() {
+      const index = this.getAttribute('data-index');
+      const popup = document.getElementById(`popup-${index}`);
+      
+      popup.classList.remove('active');
     });
   });
   
-  // Fermer le popup en cliquant en dehors
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('.point') && !e.target.closest('.popup-card')) {
-      if (activePopup) {
-        activePopup.classList.remove('active');
-        activePopup = null;
-      }
-    }
+  // Garder le popup visible quand on survole le popup lui-même
+  popups.forEach(popup => {
+    popup.addEventListener('mouseenter', function() {
+      this.classList.add('active');
+    });
+    
+    popup.addEventListener('mouseleave', function() {
+      this.classList.remove('active');
+    });
   });
 });
-
 
 // Animation fluide des points de la timeline
 document.addEventListener('DOMContentLoaded', function() {

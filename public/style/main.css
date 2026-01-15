@@ -46,6 +46,7 @@ p{ font-size:25px; line-height:1.6; margin:0; }
   justify-content:space-between;
   font-size:21px;
   margin:10px 0 45px;
+  margin-top: 0px; /* stop white line on the top*/
   position:relative;
 }
 
@@ -62,29 +63,50 @@ p{ font-size:25px; line-height:1.6; margin:0; }
 .navbar-item img{ max-height:4.5rem; height:auto; width:auto; }
 
 .navbar-burger{
-  display:block; cursor:pointer; height:3.25rem; width:3.25rem;
-  margin-right:1rem; background:transparent; border:none; position:relative;
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+
+  width: 4.2rem;
+  height: 4.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  z-index: 1100; /* au-dessus du menu */
 }
+
 .navbar-burger span{
   background-color:#333;
-   display:block; height:2px; 
-   left:50%; position:absolute;
-  transform:translateX(-50%); 
-  transition:all .3s; 
-  width:20px;
+  display:block;
+  height:3px;
+  width:26px;
+
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  transition:all .3s;
 }
-.navbar-burger span:nth-child(1){ top:calc(50% - 8px); }
+
+.navbar-burger span:nth-child(1){ top:calc(50% - 10px); }
 .navbar-burger span:nth-child(2){ top:50%; }
-.navbar-burger span:nth-child(3){ top:calc(50% + 8px); }
-.navbar-burger.is-active span:nth-child(1){ 
+.navbar-burger span:nth-child(3){ top:calc(50% + 10px); }
+
+/* .navbar-burger.is-active span:nth-child(1){ 
   transform:translateX(-50%) translateY(8px) rotate(45deg); 
   background-color:white; 
 }
+
 .navbar-burger.is-active span:nth-child(2){ opacity:0; }
 .navbar-burger.is-active span:nth-child(3){ 
   transform:translateX(-50%) translateY(-8px) rotate(-45deg); 
   background-color:white; 
-}
+} */
 
 .navbar-menu{
   display:none; 
@@ -168,7 +190,7 @@ p{ font-size:25px; line-height:1.6; margin:0; }
   text-align:center; font-size:45px; color:var(--text);
   margin:0 0 60px; font-family:"Indie Flower", cursive;
 }
-.subtitle{ font-size:45px; text-align:center; font-family:"Tinos", serif; }
+.subtitle{ font-size:45px; text-align:center; font-family:"Tinos", serif; padding-top: 100px;}
 
 /* ============================
    Section: Parcours
@@ -193,21 +215,31 @@ p{ font-size:25px; line-height:1.6; margin:0; }
 /* ============================
    Timeline & Popup - Version 2 lignes
    ============================ */
+
 #enjeux {
   position: relative;
+  background-image: url('../assets/vosenjeux.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+}
+
+.title-enjeux {
+  color: var(--text);
 }
 
 .timeline-container{
   position:relative; 
   width:100vw; 
-  margin:0;
+  /* margin:0; */
   margin-left:calc(-50vw + 50%); 
   padding:0; 
   height: 200px;
 }
 
 .timeline-top {
-  margin-top: 80px;
+  margin-top: 200px;
 }
 
 .timeline-bottom {
@@ -228,19 +260,19 @@ svg{
   position:absolute; 
   background:var(--light-green); 
   color:var(--dark-green);
-  border-radius:14px; 
-  padding:25px; 
+  border-radius:18px; 
+  padding:45px 40px; 
   display:flex; 
   justify-content:center;
   align-items:center; 
   cursor:pointer; 
   transition:transform .3s, background .3s, box-shadow .3s;
   font-weight:bold; 
-  font-size:16px; 
+  font-size:24px; 
   z-index:10; 
   box-shadow:0 4px 10px rgba(0,0,0,0.15);
   white-space:nowrap; 
-  min-width:175px;
+  min-width:220px;
 }
 
 .point:hover{
@@ -277,7 +309,7 @@ svg{
   width: 100%;
   max-width: 600px;
   padding: 30px;
-  background: var(--light-green);
+  background: var(--bg);
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   opacity: 0;
@@ -330,6 +362,8 @@ svg{
 /* ============================
    Section: ADN & Accompagnement
    ============================ */
+
+
 #accompagnement{
   background-color:var(--light-green);
   width:100%; padding:4rem 2rem; text-align:center;
@@ -353,16 +387,20 @@ svg{
   margin: 0 auto;
 }
 
+.subtitle-adn {
+  padding-top: 20px;
+}
+
 #accompagnement h2, #accompagnement p.subtitle { color:var(--text); }
 
 .adn-text{
-  flex:2; text-align:justify; margin:65px auto 45px; max-width:2000px; padding:0 2rem;
+  flex:2; text-align:justify; margin:35px ; max-width:2000px; padding:0 2rem;
 }
 
 /* ADN link icon sizing */
 .adn-link{ color:var(--dark-green); }
 .adn-link-icon{
-  width:1em; height:1em; vertical-align:-0.12em; margin-left:0.25em; object-fit:contain;
+  width:0.4em; height:0.4em; vertical-align:-0.12em; margin-left:0.25em; object-fit:contain;
 }
 
 #accompagnement .columns{
@@ -376,7 +414,7 @@ svg{
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
     background: var(--beige);
   border-radius:  16px;
-  padding: 2rem;
+  padding: 1rem;
   transition: all 0.3s ease;
 }
 #accompagnement .card:hover h2 {
@@ -390,11 +428,11 @@ svg{
 }
 /* Centre verticalement le contenu texte des cartes */
 #accompagnement .card-content{
-  flex:1; display:flex; flex-direction:column; gap:.75rem;
+  flex:1; display:flex; flex-direction:column; gap:.50rem;
 }
 #accompagnement .card-content .content{
   flex:1; display:flex; align-items:center; justify-content:center;
-  text-align:center; padding:.5rem;
+  text-align:center; padding:.4rem;
 }
 .card-content-plus{ background-color:var(--light-green); }
 
@@ -413,15 +451,15 @@ svg{
   display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:40px; margin-bottom:80px;
 }
 .contact-card{
-  background:var(--light-green); padding:40px 30px; border-radius:16px; text-align:center;
+  background:var(--dark-green); padding:40px 30px; border-radius:16px; text-align:center;
   box-shadow:var(--card-shadow); transition:transform .3s, box-shadow .3s;
 }
 .contact-card:hover{ transform:translateY(-5px); box-shadow:0 8px 25px rgba(0,0,0,0.15); }
-.contact-card-full{ grid-column:1 / -1; max-width:500px; margin:0 auto; width:100%; }
+.contact-card-full{ grid-column:1 / -1; max-width:500px; margin:0 auto; width:100%; background-color: var();}
 
 .contact-icon{
   width:80px; height:80px; margin:0 auto 20px; background:#45a049; border-radius:50%;
-  display:flex; align-items:center; justify-content:center; color:white;
+  display:flex; align-items:center; justify-content:center; color:var();
 }
 .contact-card h3{ font-size:28px; margin:15px 0 25px; color:var(--text); }
 .contact-details{ display:flex; flex-direction:column; gap:15px; align-items:center; }
@@ -449,17 +487,27 @@ svg{
    ============================ */
 .story-container{
   display:flex; align-items:center; justify-content:center; background:var(--light-green); padding:2rem;
-  border-radius:8px; max-width:800px; margin:auto;
+  border-radius:8px; max-width:400px; margin:auto;
 }
+.subtitle-story {
+  margin-top: 25px;
+}
+
+.img-story {
+  margin-left: 125px;
+}
+
 .story-content{ flex:1; text-align:justify; font-size:1.2rem; padding:0 2rem; }
 .story-btn{
   background:white; color:var(--light-green); border:none; font-size:2rem; cursor:pointer;
   padding:.5rem 1rem; border-radius:50%; transition:background .3s;
 }
+
 .story-btn:hover{ background:#45a049; }
+
 .author {
   display: block;
-  margin-top: 0.8em;
+  margin-top: 60px;
   font-weight: 600;
   font-style: italic;
   color: #dbae70;
@@ -470,7 +518,7 @@ svg{
 
         .carousel-section {
             width: 100%;
-            min-height: 100vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -505,7 +553,7 @@ svg{
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--dark-green);
+            background: var(--light-green);
         }
 
         .carousel-slide.active {
@@ -523,7 +571,7 @@ svg{
 
         .quote-icon {
             font-size: 80px;
-            color: rgba(255, 255, 255, 0.3);
+            color: var(--green);
             margin: 0 0 20px 0;
             font-family: Georgia, serif;
             line-height: 0.6;
@@ -532,7 +580,7 @@ svg{
         .slide-text {
             font-size: 28px;
             line-height: 1.8;
-            color: var(--light-green);
+            color: var(--text);
             text-align: justify;
             margin: 0 0 30px 0;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -589,28 +637,41 @@ svg{
         /* Indicators */
         .carousel-indicators {
             display: flex;
-            gap: 15px;
+            gap: 18px;
             margin-top: 50px;
             justify-content: center;
         }
 
         .indicator {
-            width: 14px;
-            height: 14px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
-            background: var(--light-green);
-            border: 2px solid var(--green);
+            background: var(--dark-green);
+            border: 3px solid var(--green);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.25s ease;
+            box-sizing: border-box;
         }
 
         .indicator.active {
             background: var(--green);
-            transform: scale(1.3);
+            transform: scale(1.15);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
         }
 
         .indicator:hover {
             background: var(--dark-green);
+            transform: scale(1.05);
+        }
+
+        /* Responsive: un peu plus petit sur petits écrans */
+        @media (max-width: 768px) {
+            .indicator {
+                width: 18px;
+                height: 18px;
+                border-width: 2px;
+            }
+            .indicator.active { transform: scale(1.12); }
         }
 
         /* Background decoration */
