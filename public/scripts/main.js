@@ -215,11 +215,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function resetAutoPlay() {
             clearInterval(autoPlayInterval);
-            autoPlayInterval = setInterval(autoPlay, 12000);
+            autoPlayInterval = setInterval(autoPlay, 7000);
         }
 
         // Start autoplay
-        autoPlayInterval = setInterval(autoPlay, 12000);
+        autoPlayInterval = setInterval(autoPlay, 7000);
 
         // Keyboard navigation
         document.addEventListener('keydown', (e) => {
