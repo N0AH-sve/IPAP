@@ -1,284 +1,418 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr" class="has-navbar-fixed-top">
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <meta charset="UTF-8">
-  <title>Ip-ap</title>
-  <link rel="stylesheet" href="style/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPAP - Anticiper & Choisir</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-<!-- Header -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="ml-3 mr-3 navbar-item" href="#">
-      <img src="assets/logo.png" alt="Logo IPAP">
-    </a>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div class="navbar-menu" id="navbarMenu">
-    <div class="navbar-end mr-3">
-      <a class="navbar-item" href="index.html">Accueil</a>
-      <a class="navbar-item" href="#parcours">Notre parcours</a>
-      <a class="navbar-item" href="#enjeux">Vos enjeux</a>
-      <a class="navbar-item" href="#accompagnement">Notre ADN & Accompagnement</a>
-      <a class="navbar-item" href="#histoire">Vos histoires partagées</a>
-      <a class="navbar-item" href="contact/nousContacter.html">Nous contacter</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Titre -->
-<div class="title mb-5 mt-6">
-  <span class="green">Anticiper</span> aujourd'hui pour <span class="green">choisir</span> demain
-</div>
-<div class="subtitle-under-title">
-  Anticiper avec expertise, protéger avec sérénité, pour vivre en parfaite harmonie avec vos choix
-</div>
-
-<!-- Section: Notre parcours -->
-<div class="part mt-6" id="parcours">
-  <div class="picture">
-    <img src="assets/le__penseur.png" alt="Le Penseur">
-  </div>
-  <div class="conteneur_centre">
-    <div class="describe_each_one">
-      <h3 class="name">Alexandra Santerre</h3>
-      <p class="descr-personne">Conseillère en Gestion de Patrimoine, je consacre mon expertise aux séniors et aux situations de fragilité.
-        Attentive, pédagogue et engagée, j'élabore des solutions patrimoniales sur mesure, durables et garantes de sérénité. <br>Je guide avec bienveillance les familles dans leurs décisions stratégiques.</p>
-    </div>
-    <div class="describe_each_one">
-      <h3 class="name">Nathalie Mouillet</h3>
-      <p class="descr-personne">Conseillère en Gestion de Patrimoine, issue du Notariat, spécialisée en droit de la famille, j'interviens auprès de Mandataires judiciaires à la protection des majeurs.
-        Mon approche est empreinte de rigueur, de sens de l'écoute et d'une parfaite connaissance des dispositifs de protection des personnes vulnérables.</p>
-    </div>
-  </div>
-  <div class="descr-personne final_description">
-    <p>Ensemble, nous avons fondé IPAP avec une ambition claire : Accompagner les familles, les aidants et les professionnels confrontés à des situations de vulnérabilité durable ou temporaire, à travers des solutions concrètes, sur mesure et humaines.</p>
-  </div>
-</div>
-
-<!-- Section: Vos enjeux -->
-<div class="part" id="enjeux">
-  <div class="mb-4 subtitle has-text-centered">
-    <h2 class="title-enjeux">Vous êtes vous déjà demandé ?</h2>
-  </div>
-
-  <!-- Ligne du haut : 3 points -->
-  <div class="timeline-container timeline-top">
-    <svg viewBox="0 0 1600 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M 0 100 
-               C 80 100, 120 70, 160 70
-               C 200 70, 240 85, 266 95
-               C 290 105, 320 120, 360 125
-               C 400 130, 440 125, 480 115
-               C 520 105, 560 90, 600 85
-               C 640 80, 680 80, 720 90
-               C 760 100, 800 115, 850 120
-               C 900 125, 950 120, 1000 110
-               C 1050 100, 1100 95, 1150 100
-               C 1200 105, 1250 115, 1300 120
-               C 1350 125, 1400 125, 1450 120
-               C 1500 115, 1550 105, 1600 100"
-            stroke="#45a049" stroke-width="5" fill="transparent"/>
-    </svg>
-    <div class="point" data-index="0">Perte de capacités</div>
-    <div class="point" data-index="1">Handicap</div>
-    <div class="point" data-index="2">Aide</div>
-  </div>
-
-  <!-- Zone centrale pour les popups -->
-  <div class="popup-zone">
-    <div class="popup-card" id="popup-0">
-      <h3>Perte de capacités</h3>
-      <p class="content-popup">Comment anticiper et protéger mes proches en cas de perte d'autonomie ?</p>
-    </div>
-    <div class="popup-card" id="popup-1">
-      <h3>Handicap</h3>
-      <p class="content-popup">Quelles solutions pour sécuriser l'avenir d'un enfant ou d'un proche en situation de handicap ?</p>
-    </div>
-    <div class="popup-card" id="popup-2">
-      <h3>Aide</h3>
-      <p class="content-popup">Comment m'organiser pour accompagner au mieux un proche vulnérable ?</p>
-    </div>
-    <div class="popup-card" id="popup-3">
-      <h3>Solidarité</h3>
-      <p class="content-popup">Comment préserver l'équilibre familial face aux responsabilités d'aidant ?</p>
-    </div>
-    <div class="popup-card" id="popup-4">
-      <h3>Inclusion</h3>
-      <p class="content-popup">Quels dispositifs pour favoriser l'autonomie et l'inclusion de tous ?</p>
-    </div>
-    <div class="popup-card" id="popup-5">
-      <h3>Respect</h3>
-      <p class="content-popup">Comment respecter les volontés de mes proches tout en les protégeant ?</p>
-    </div>
-  </div>
-
-  <!-- Ligne du bas : 3 points -->
-  <div class="timeline-container timeline-bottom">
-    <svg viewBox="0 0 1600 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      <path d="M 0 100 
-               C 80 100, 120 130, 160 130
-               C 200 130, 240 115, 266 105
-               C 290 95, 320 80, 360 75
-               C 400 70, 440 75, 480 85
-               C 520 95, 560 110, 600 115
-               C 640 120, 680 120, 720 110
-               C 760 100, 800 85, 850 80
-               C 900 75, 950 80, 1000 90
-               C 1050 100, 1100 105, 1150 100
-               C 1200 95, 1250 85, 1300 80
-               C 1350 75, 1400 75, 1450 80
-               C 1500 85, 1550 95, 1600 100"
-            stroke="#45a049" stroke-width="5" fill="transparent"/>
-    </svg>
-    <div class="point" data-index="3">Solidarité</div>
-    <div class="point" data-index="4">Inclusion</div>
-    <div class="point" data-index="5">Respect</div>
-  </div>
-</div>
-
-<!-- Section: Notre ADN & Accompagnement -->
-<div class="part" id="accompagnement">
-  <div class="subtitle has-text-centered subtitle-adn">
-    <h2>Notre ADN</h2>
-  </div>
-
-  <div class="adn-text">
-    <p>
-      Notre ADN allie (se situe au croisement de) l'<span class="green">éthique</span>, (de) l'<span class="green">expertise</span> et (de) l'<span class="green">engagement</span> humain.
-      Chez IPAP, nous croyons que l'accompagnement patrimonial ne se résume pas à des chiffres ou à des contrats.
-      Notre engagement va au-delà de notre activité professionnelle, concernées par les enjeux humains et juridiques
-      liés à la vulnérabilité, nous avons choisi de devenir ambassadrices de <a class="adn-link" href="https://www.francetutelle.fr/">France TUTELLE</a> dans la région Ouest. Ainsi, nous soutenons bénévolement les aidants familiaux, tuteurs, curateurs et habilités familiaux dans leurs responsabilités.<br> Nous proposons un accompagnement sur mesure (alliant) :
-    </p>
-  </div>
-
-  <div class="columns is-multiline is-centered">
-    <div class="column is-one-quarter">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/pedagogie.png" alt="Pédagogie" />
-          </figure>
+    <nav class="navbar is-fixed-top is-white has-shadow" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#"><img src="assets/logo.png" alt="Logo"></a>
+                <a role="button" class="navbar-burger" id="burger" data-target="navMenu">
+                    <span></span><span></span><span></span>
+                </a>
+            </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#accueil-titre">Accueil</a>
+                    <a class="navbar-item" href="#parcours-titre">Parcours</a>
+                    <a class="navbar-item" href="#enjeux-titre">Enjeux</a>
+                    <a class="navbar-item" href="#accompagnement">ADN</a>
+                    <a class="navbar-item" href="#histoire">Histoires</a>
+                    <div class="navbar-item">
+                        <a href="#contact" class="button is-primary is-rounded">Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-content card-content-plus">
-          <p class="is-5 sous-titre">Pédagogie</p>
-          <div class="content">
-            Nous avons à cœur de rendre accessibles des sujets sensibles et parfois perçus comme complexes.
-            Notre mission : offrir à nos clients la clarté nécessaire pour faire des choix éclairés, y compris dans des moments de doute, de stress ou de vulnérabilité.
-          </div>
+    </nav>
+
+    <section id="accueil-titre" class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1"><span class="has-text-light-green">Anticiper</span> aujourd'hui pour <br><span class="has-text-light-green">choisir</span> demain</h1>
+            </div>
         </div>
-      </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#accueil-contenu" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="accueil-contenu" class="hero is-fullheight is-white">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-6">
+                        <figure class="image is-4by3">
+                            <img src="assets/le__penseur.png" alt="Anticiper" class="is-fullwidth">
+                        </figure>
+                    </div>
+                    <div class="column is-5 is-offset-1">
+                        <h2 class="title is-3">Vivre en <span class="has-text-success">harmonie</span> avec vos <span class="has-text-success">choix</span></h2>
+                        <p class="subtitle is-5">Anticiper avec expertise, protéger avec sérénité, pour vivre en parfaite harmonie avec vos choix.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#parcours-titre" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours-titre" class="hero is-fullheight back-is-success">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Notre Parcours</h2>
+                <p class="subtitle is-3">Deux expertises au service de la vulnérabilité</p>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#parcours-contenu" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours-contenu" class="hero is-fullheight is-light">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-10 has-text-centered">
+                        <h3 class="title is-4 has-text-grey-dark">"Ensemble, nous avons fondé IPAP pour accompagner les familles avec des solutions concrètes et humaines."</h3>
+                    </div>
+                </div>
+                <div class="columns is-centered mb-6">
+                    <div class="column is-5">
+                        <div class="card card-equal-height">
+                            <div class="card-content">
+                                <h3 class="title is-4">Alexandra Santerre</h3>
+                                <p>Conseillère en Gestion de Patrimoine dédiée aux séniors et aux situations de fragilité. Pédagogue et engagée.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-5">
+                        <div class="card card-equal-height">
+                            <div class="card-content">
+                                <h3 class="title is-4">Nathalie Mouillet</h3>
+                                <p>Issue du Notariat, spécialisée en droit de la famille et protection des majeurs vulnérables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#enjeux-titre" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="enjeux-titre" class="hero is-fullheight back-is-success">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Vos Enjeux</h2>
+                <p class="subtitle is-3">Vous êtes-vous déjà demandé ?</p>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#enjeux-contenu" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="enjeux-contenu" class="section is-white">
+        <div class="container">
+            <div class="enjeux-timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker is-success">
+                        <span class="icon">
+                            <i class="fas fa-users"></i>
+                        </span>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="heading">Succession & Transmission</p>
+                        <div class="box has-background-white-bis">
+                            <p class="title is-5 has-text-success">Qui se préoccupe de mon avenir ?</p>
+                            <p>Questions de succession, d'héritage et de transmission de votre patrimoine aux personnes qui vous sont chères.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker is-success">
+                        <span class="icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </span>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="heading">Protection Patrimoniale</p>
+                        <div class="box has-background-white-bis">
+                            <p class="title is-5 has-text-success">Comment protéger mon patrimoine ?</p>
+                            <p>Mise en place de stratégies de protection fiscale et patrimoniale adaptées à votre situation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker is-success">
+                        <span class="icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </span>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="heading">Dépendance & Vulnérabilité</p>
+                        <div class="box has-background-white-bis">
+                            <p class="title is-5 has-text-success">Qui prendra soin de mes proches en cas de besoin ?</p>
+                            <p>Anticipation de la dépendance et mise en place de mesures de protection des personnes vulnérables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker is-success">
+                        <span class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </span>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="heading">Optimisation Patrimoniale</p>
+                        <div class="box has-background-white-bis">
+                            <p class="title is-5 has-text-success">Comment optimiser mon patrimoine ?</p>
+                            <p>Stratégies d'investissement et de gestion de patrimoine pour sécuriser et développer votre capital.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="timeline-item is-last">
+                    <div class="timeline-marker is-success">
+                        <span class="icon">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="timeline-content">
+                        <p class="heading">Sérénité & Harmonie</p>
+                        <div class="box has-background-white-bis">
+                            <p class="title is-5 has-text-success">Vivre sereinement mes choix</p>
+                            <p>Accompagnement global pour vivre en harmonie avec vos décisions et vos valeurs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="accompagnement" class="hero is-fullheight back-is-success ">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Notre ADN</h2>
+                <p class="subtitle is-3">Éthique, Expertise et Engagement humain</p>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#adn-contenu" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+<section id="adn-contenu" class="hero is-fullheight is-white">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-centered mb-6">
+                <p class="is-size-5">
+                    Notre ADN allie l'éthique, l'expertise et l'engagement humain. Chez IPAP, nous croyons que l'accompagnement patrimonial ne se résume pas à des chiffres ou à des contrats.
+                    Ambassadrices de <strong>France TUTELLE</strong>, nous soutenons bénévolement les aidants familiaux, tuteurs, curateurs et habilités familiaux.
+                </p>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="card card-equal-height">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/pedagogie.png" alt="Pédagogie">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-success">Pédagogie</p>
+                            <p>Nous avons à cœur de rendre accessibles des sujets sensibles et parfois perçus comme complexes. Notre mission : offrir à nos clients la clarté nécessaire pour faire des choix éclairés.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card card-equal-height">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/deontologie.png" alt="Déontologie">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-success">Déontologie</p>
+                            <p>Nous exerçons notre métier avec rigueur et intégrité. Adhérentes à la CNCGP et soumises aux exigences de l'AMF, nous garantissons transparence, loyauté et conformité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card card-equal-height">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/cooperation.png" alt="Coopération">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-success">Coopération</p>
+                            <p>Nous privilégions une approche globale et pluridisciplinaire en travaillant en partenariat avec vos conseils habituels : notaires, avocats, experts-comptables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="column is-one-quarter">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/deontologie.png" alt="Déontologie" />
-          </figure>
+    <div class="hero-foot">
+        <div class="container has-text-centered mb-6">
+            <a href="#histoire" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
         </div>
-        <div class="card-content card-content-plus">
-          <p class="is-5 sous-titre">Déontologie</p>
-          <div class="content">
-            Nous exerçons notre métier avec rigueur et intégrité, dans le respect strict des règles professionnelles qui encadrent notre activité.
-            Adhérentes à la Chambre Nationale des Conseils en Gestion de Patrimoine (CNCGP) et soumises aux exigences de l'Autorité des Marchés Financiers (AMF), nous nous engageons à garantir transparence, loyauté et conformité dans l'ensemble de nos missions.
-          </div>
-        </div>
-      </div>
     </div>
+</section>
 
-    <div class="column is-one-quarter">
-      <div class="card">
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src="assets/cooperation.png" alt="Coopération" />
-          </figure>
+<section id="histoire" class="hero is-fullheight back-is-success">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Histoires partagées</h2>
+                <p class="subtitle is-3">Ils nous ont fait confiance</p>
+            </div>
         </div>
-        <div class="card-content card-content-plus">
-          <p class="sous-titre is-5">Coopération</p>
-          <div class="content description">
-            En tant que Conseillers en Gestion de Patrimoine (CGP), nous privilégions une approche globale et pluridisciplinaire. <br>
-            Pour construire des solutions véritablement sur mesure, tenant compte de tous les paramètres de la situation de nos clients, nous travaillons en partenariat avec leurs conseils habituels : notaires, avocats, experts-comptables, mandataires judiciaires et professionnels du conseil financier.
-          </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#histoire-contenu" class="scroll-down-arrow"><i class="fas fa-chevron-down fa-3x"></i></a>
+            </div>
         </div>
-      </div>
+    </section>
+
+<section id="histoire-contenu" class="hero is-fullheight is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div id="carousel-demo" class="carousel">
+                <div class="item-1">
+                    <div class="box has-text-centered p-6 mx-2">
+                        <p class="is-size-5 mb-5">"Après mon burn-out, j'avais tout laissé tomber... Grâce à l'accompagnement patient et bienveillant d'Alexandra Santerre, j'ai pu remettre ma situation fiscale à plat, retrouver ma sérénité… et recréer une société."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success">— Fabien, 49 ans</span></strong></p>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="box has-text-centered p-6 mx-2">
+                        <p class="is-size-5 mb-5">"Grâce à l'écoute et à l'accompagnement de Nathalie Mouillet, j'ai appris à comprendre mon patrimoine, à ajuster mon train de vie et à envisager l'avenir sereinement."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success">— Sylvie, 55 ans</span></strong></p>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <div class="box has-text-centered p-6 mx-2">
+                        <p class="is-size-5 mb-5">"N'ayant ni enfants ni famille proche, j'ai trouvé un véritable soutien... C'est une présence de confiance sur laquelle je peux m'appuyer au quotidien."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success">— Honorine, 82 ans</span></strong></p>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <div class="box has-text-centered p-6 mx-2">
+                        <p class="is-size-5 mb-5">"Nathalie Mouillet nous a aidés à rédiger un mandat de protection future entièrement adapté... Aujourd'hui, nous sommes rassurés : tout a été pensé pour que nos volontés soient respectées."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success">— Jean-Paul et Martine</span></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+</section>
 
-<!-- Section: Histoires partagées -->
-<div class="part" id="histoire">
-  <div class="subtitle-story subtitle">
-    <h2 class="color-subtitle">Histoires partagées</h2>
-  </div>
 
-  <div class="carousel-section">
-    <img src="assets/stories.png" alt="story" class="img-story">
+<section id="contact" class="hero is-fullheight back-is-success">
+    <div class="hero-body">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-1">Nous contacter</h2>
+                <p class="subtitle is-4">Une équipe à votre écoute</p>
+            </div>
 
-    <div class="carousel-container">
-      <div class="carousel-slide active">
-        <div class="slide-content">
-          <p class="slide-text">
-            Après mon burn-out, j'avais tout laissé tomber. Les papiers s'accumulaient, les contentieux aussi, et je n'osais même plus ouvrir ma boîte aux lettres. Grâce à l'accompagnement patient et bienveillant d'Alexandra Santerre, j'ai pu remettre ma situation fiscale à plat, retrouver ma sérénité… et recréer une société. Aujourd'hui, je regarde l'avenir avec confiance et assurance.
-          </p>
-          <div class="slide-author">— Fabien, 49 ans</div>
+            <div class="columns is-centered">
+                <div class="column is-4">
+                    <div class="contact-card-custom">
+                        <img src="assets/AlexandraSanterre.jpeg" alt="Alexandra Santerre" class="profile-photo-small">
+                        <h3 class="title is-4">Alexandra Santerre</h3>
+                        <p class="subtitle is-6 has-text-grey">Conseillère en Gestion de Patrimoine</p>
+                        <div class="content">
+                            <p><a href="tel:+33664319515" class="has-text-success"><i class="fas fa-phone mr-2"></i>06 64 31 95 15</a></p>
+                            <p><a href="mailto:asanterre@ip-ap.fr" class="has-text-dark"><i class="fas fa-envelope mr-2"></i>asanterre@ip-ap.fr</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="contact-card-custom">
+                        <img src="assets/logo_ipap.png" alt="Consultante Ipapt" class="profile-photo-small">
+                        <h3 class="title is-4">IPAP consultante</h3>
+                        <h3 class="subtitle is-6 has-text-grey">Cabinet d'accompagnement Patrimonial</h3>
+                        <div class="content">
+                            <p><br></p>
+                            <p><a href="consultante@ip-ap.fr" class="has-text-dark"><i class="fas fa-envelope mr-2"></i>consultante@ip-ap.fr</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="contact-card-custom">
+                        <img src="assets/nathalieMouillet.jpeg" alt="Nathalie Mouillet" class="profile-photo-small">
+                        <h3 class="title is-4">Nathalie Mouillet</h3>
+                        <p class="subtitle is-6 has-text-grey">Conseillère en Gestion de Patrimoine</p>
+                        <div class="content">
+                            <p><a href="tel:+33630762315" class="has-text-success"><i class="fas fa-phone mr-2"></i>06 30 76 23 15</a></p>
+                            <p><a href="mailto:nmouillet@ip-ap.fr" class="has-text-dark"><i class="fas fa-envelope mr-2"></i>nmouillet@ip-ap.fr</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="carousel-slide">
-        <div class="slide-content">
-          <p class="slide-text">
-            Après mon divorce, je me suis retrouvée à la tête d'un patrimoine et de revenus conséquents, mais dans un moment de grande fragilité personnelle. Je ne savais pas comment gérer ni quels choix faire. Grâce à l'écoute et à l'accompagnement de Nathalie Mouillet, j'ai appris à comprendre mon patrimoine, à ajuster mon train de vie et à envisager l'avenir sereinement. Aujourd'hui, je sais que mes bases sont solides pour construire ma sécurité sur le long terme.
-          </p>
-          <div class="slide-author">— Sylvie, 55 ans</div>
-        </div>
-      </div>
-
-      <div class="carousel-slide">
-        <div class="slide-content">
-          <p class="slide-text">
-            Depuis plusieurs années, Alexandra Santerre m'accompagne dans la gestion de mon patrimoine. Mais, peu à peu, son rôle a dépassé le cadre strictement financier : n'ayant ni enfants ni famille proche, j'ai trouvé un véritable soutien, aussi bien pour mes choix patrimoniaux que pour des aspects concrets de mon cadre de vie. C'est une présence de confiance sur laquelle je peux m'appuyer au quotidien.
-          </p>
-          <div class="slide-author">— Honorine, 82 ans</div>
-        </div>
-      </div>
-
-      <div class="carousel-slide">
-        <div class="slide-content">
-          <p class="slide-text">
-            Nous voulions préparer l'avenir, mais sans savoir par où commencer. Nathalie Mouillet nous a aidés à rédiger un mandat de protection future entièrement adapté à notre situation et à organiser notre patrimoine. Des outils simples ont été mis en place pour que nos mandataires puissent prendre le relais le moment venu. Aujourd'hui, nous sommes rassurés : tout a été pensé pour que nos volontés soient respectées.
-          </p>
-          <div class="slide-author">— Jean-Paul et Martine</div>
-        </div>
-      </div>
     </div>
+</section>
 
-    <div class="carousel-indicators">
-      <span class="indicator active" onclick="goToSlide(0)"></span>
-      <span class="indicator" onclick="goToSlide(1)"></span>
-      <span class="indicator" onclick="goToSlide(2)"></span>
-      <span class="indicator" onclick="goToSlide(3)"></span>
+<footer class="footer has-background-white">
+    <div class="container">
+        <div class="columns has-text-centered">
+            <div class="column">
+                <a href="#accueil-titre" class="has-text-success has-text-weight-bold">Accueil</a>
+            </div>
+            <div class="column">
+                <a href="#contact" class="has-text-success">Nous contacter</a>
+            </div>
+            <div class="column">
+                <a href="#" class="has-text-grey">Mentions légales</a>
+            </div>
+            <div class="column">
+                <a href="#" class="has-text-success">Politique de confidentialité</a>
+            </div>
+            <div class="column has-text-grey-light">
+                © 2025 IPAP - Tous droits réservés
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="footer-navbar">
-  <div class="columns has-text-centered" style="margin-top: 20px;">
-    <div class="column"><a href="index.html" style="color: var(--green); font-weight: 600;">Accueil</a></div>
-    <div class="column"><a href="contact/nousContacter.html" style="color: var(--green);">Nous contacter</a></div>
-    <div class="column"><a href="mentionslegales/mentionsleg.html" style="color: var(--dark-green);">Mentions légales</a></div>
-    <div class="column"><a href="politiquedutilisation/politiquedutilisation.html" style="color: var(--green);">Politique de confidentialité</a></div>
-    <div class="column" style="color: #666;">© 2025 IPAP - Tous droits réservés</div>
-  </div>
 </footer>
 
-<script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
