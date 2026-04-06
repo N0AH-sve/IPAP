@@ -18,6 +18,17 @@ html {
   --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.navbar {
+    min-height: 100px;;
+}
+.navbar-item img {
+    max-height: 35px;
+    height: 80px;
+}
+.navbar-item {
+    font-size: 1.3rem;
+}
+
 /* Application des couleurs sur les boutons et titres */
 .button.is-primary {
     background-color: var(--green) !important;
@@ -91,6 +102,7 @@ html {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     position: relative;
     z-index: 1;
+    font-size: 5.9rem;
 }
 
 /* ===== SCROLL DOWN ARROW ===== */
@@ -340,6 +352,10 @@ figure.image img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.carourou {
+    background-color: var(--light-green);
 }
 
 .italic {
