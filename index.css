@@ -44,6 +44,10 @@ html {
     background-color: var(--light-green);
 }
 
+.back-is-dark {
+    background-color: var(--dark-green);
+}
+
 .has-text-success {
     color: var(--dark-green) !important;
 }
