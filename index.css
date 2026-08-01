@@ -376,3 +376,65 @@ figure.image img {
 .hero-body {
     flex-grow: 1;
 }
+
+/* Custom Styles for Enjeux Section - Alignment Fix */
+.enjeux-wrapper {
+    position: relative;
+}
+
+/* Connecting dashed line - visible only on desktop */
+@media screen and (min-width: 1024px) {
+    .enjeux-connecting-line {
+        position: absolute;
+        /* Fixed top value: 60px (title wrapper height) + 45px (half of the 90px icon) */
+        top: 105px; 
+        left: 12%;
+        right: 12%;
+        border-top: 2px dashed #2f855a;
+        z-index: 0;
+    }
+}
+
+/* Circular Icon Containers */
+.enjeux-icon-circle {
+    position: relative;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    background-color: #e4ebe2; 
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.enjeux-icon-circle i {
+    font-size: 2.5rem;
+    color: #2f855a; 
+}
+
+/* Custom green bullet points for the boxes */
+.enjeux-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.enjeux-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.enjeux-list li::before {
+    content: '●';
+    color: #2f855a; 
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 1rem;
+}
