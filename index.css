@@ -438,3 +438,58 @@ figure.image img {
     top: -2px;
     font-size: 1rem;
 }
+
+/* Style sur-mesure pour la section Nos Missions */
+.mission-card {
+    border-radius: 16px;
+    border: 1px solid #eef2ed;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.mission-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Cercle de l'icone d'en-tete */
+.mission-icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #e4ebe2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mission-icon-circle i {
+    font-size: 1.5rem;
+    color: #2f855a;
+}
+
+/* Puces personnalisees vertes */
+.mission-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.mission-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #4a4a4a;
+    font-size: 0.95rem;
+}
+
+.mission-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2f855a;
+    font-weight: bold;
+}
