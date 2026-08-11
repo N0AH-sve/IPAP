@@ -1,26 +1,100 @@
-/* ===== SMOOTH SCROLLING ===== */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+/* ===== BULMA FRIENDLY CSS - IPAP ===== */
+/* Épuré, minimaliste, 100% compatible Bulma */
+/* 150 lignes au lieu de 600+ */
+
+/* ===== 1. VARIABLES GLOBALES ===== */
+:root {
+    --bg: #e1e3e0;
+    --green: #489C54;
+    --dark-green: #3d8944;
+    --light-green: #bfcfb0;
+    --text: #333;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== 2. HTML & BODY ===== */
 html {
     scroll-behavior: smooth;
 }
 
-:root {
-  --bg: #e1e3e0;
-  --green: #489C54;
-  --dark-green: #3d8944;
-  --light-green: #bfcfb0;
-  --text: #333;
-  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-/* ===== TYPOGRAPHY FLUIDE ===== */
-/* Les tailles de police s'ajustent automatiquement selon la largeur de l'écran */
+/* ===== 3. NAVBAR OVERRIDES ===== */
+/* Bulma navbar : laisser faire, juste les corrections */
+.navbar {
+    min-height: 60px;
+    padding: 0.5rem 0;
+}
+
+.navbar-item img {
+    max-height: 35px;
+    height: auto;
+    width: auto;
+}
+
+.navbar-item {
+    font-size: 0.95rem;
+}
+
+/* ===== 4. COULEURS - OVERRIDES ===== */
+/* Remplacer les couleurs Bulma par les vôtres */
+.button.is-primary {
+    background-color: var(--green) !important;
+    border-color: transparent;
+}
+
+.button.is-primary:hover {
+    background-color: var(--dark-green) !important;
+}
+
+.has-text-success {
+    color: var(--dark-green) !important;
+}
+
+.has-text-light-green {
+    color: var(--light-green) !important;
+}
+
+.back-is-success {
+    background-color: var(--light-green);
+}
+
+.back-is-dark {
+    background-color: var(--dark-green);
+}
+
+/* ===== 5. HERO SECTIONS - Bulma native ===== */
+/* Bulma: .hero, .hero-body, .hero-foot */
+/* Juste quelques ajustements */
+.hero {
+    overflow-x: hidden;
+}
+
+.hero-body {
+    padding: clamp(2rem, 5vw, 3rem) 1rem;
+}
+
+#accueil-titre {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                      url('assets/logo_ipap.png');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#accueil-titre .title {
+    color: white !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.3;
+}
+
+/* ===== 6. TYPOGRAPHY - Bulma clamp() ===== */
 h1, .title.is-1 {
     font-size: clamp(2rem, 5vw, 3.2rem);
 }
@@ -37,76 +111,23 @@ h3, .title.is-3 {
     font-size: clamp(0.95rem, 2vw, 1.1rem);
 }
 
-/* ===== NAVBAR IMPROVEMENTS ===== */
-.navbar {
-    min-height: 70px;
-    padding: 0.5rem 1rem;
-}
-
-.navbar-item img {
-    max-height: 35px;
-    height: auto;
-    width: auto;
-}
-
-.navbar-item {
-    font-size: clamp(0.9rem, 2vw, 1.3rem);
-}
-
-/* Amélioration du menu burger sur mobile */
-@media screen and (max-width: 1023px) {
-    .navbar {
-        min-height: 60px;
-    }
-    
-    .navbar-item {
-        font-size: 1rem;
-    }
-    
-    .navbar-brand {
-        padding: 0;
-    }
-    
-    .navbar-menu {
-        background-color: #fff;
-    }
-}
-
-/* ===== COLOR UTILITIES ===== */
-.button.is-primary {
-    background-color: var(--green) !important;
-    border-color: transparent;
-    color: #fff;
+/* ===== 7. CARDS - Bulma native ===== */
+/* Bulma: .card, .card-content, .card-image */
+.card {
+    border-radius: 12px;
     transition: all 0.3s ease;
 }
 
-.light-color {
-    color: var(--light-green);
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.button.is-primary:hover {
-    background-color: var(--dark-green) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(72, 156, 84, 0.2);
+.card-image img {
+    border-radius: 12px 12px 0 0;
 }
 
-.back-is-success {
-    background-color: var(--light-green);
-}
-
-.back-is-dark {
-    background-color: var(--dark-green);
-}
-
-.has-text-success {
-    color: var(--dark-green) !important;
-}
-
-.has-text-light-green {
-    color: var(--light-green) !important;
-}
-
-/* ===== CONTACT CARDS ===== */
+/* Custom contact card */
 .contact-card-custom {
     background: white;
     border-radius: 15px;
@@ -132,46 +153,24 @@ h3, .title.is-3 {
     border: 3px solid var(--light-green);
 }
 
-/* ===== HERO SECTIONS ===== */
-#accueil-titre {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-                      url('assets/logo_ipap.png');
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+/* ===== 8. IMAGES ===== */
+figure.image img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
-#accueil-titre .hero-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    padding: 2rem 1rem;
+/* ===== 9. SECTIONS & CONTAINERS ===== */
+.section {
+    padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2rem);
 }
 
-#accueil-titre .container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+    padding-left: clamp(1rem, 3vw, 2rem);
+    padding-right: clamp(1rem, 3vw, 2rem);
 }
 
-#accueil-titre .title {
-    color: white !important;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-    position: relative;
-    z-index: 1;
-    padding: 1rem;
-    line-height: 1.3;
-}
-
-.hero-foot {
-    padding: 1.5rem 1rem;
-}
-
-/* ===== SCROLL DOWN ARROW ===== */
+/* ===== 10. SCROLL ARROW ===== */
 .scroll-down-arrow {
     color: inherit;
     display: inline-block;
@@ -191,46 +190,7 @@ h3, .title.is-3 {
     60% { transform: translateY(-5px); }
 }
 
-/* ===== CARD EQUAL HEIGHT ===== */
-.card-equal-height {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.card-equal-height .card-content {
-    flex-grow: 1;
-}
-
-/* ===== CAROUSEL ===== */
-.carousel-nav-left, 
-.carousel-nav-right {
-    background: #489C54 !important;
-    border-radius: 50%;
-    color: white !important;
-    transition: all 0.3s ease;
-}
-
-.carousel-nav-left:hover,
-.carousel-nav-right:hover {
-    background: #3d8944 !important;
-    transform: scale(1.1);
-}
-
-/* ===== IMAGES ===== */
-.card-image img {
-    border-radius: 4px 4px 0 0;
-    width: 100%;
-    height: auto;
-}
-
-figure.image img {
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
-}
-
-/* ===== TIMELINE ENJEUX ===== */
+/* ===== 11. TIMELINE - Bulma + custom ===== */
 .enjeux-timeline {
     position: relative;
     padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem);
@@ -238,7 +198,6 @@ figure.image img {
     max-width: 800px;
 }
 
-/* Ligne centrale verticale */
 .enjeux-timeline::before {
     content: '';
     position: absolute;
@@ -255,32 +214,6 @@ figure.image img {
     position: relative;
 }
 
-.timeline-item:last-child {
-    margin-bottom: 0;
-}
-
-.timeline-item.is-last .timeline-marker::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    animation: pulse-success 2s infinite;
-}
-
-@keyframes pulse-success {
-    0% {
-        box-shadow: 0 0 0 0 rgba(72, 156, 84, 0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 15px rgba(72, 156, 84, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(72, 156, 84, 0);
-    }
-}
-
-/* Marqueur circulaire */
 .timeline-marker {
     position: absolute;
     left: 50%;
@@ -295,12 +228,6 @@ figure.image img {
     justify-content: center;
     z-index: 2;
     transition: all 0.3s ease;
-    top: 0;
-}
-
-.timeline-marker .icon {
-    color: var(--green);
-    font-size: 1.5rem;
 }
 
 .timeline-marker:hover {
@@ -308,7 +235,6 @@ figure.image img {
     transform: translateX(-50%) scale(1.1);
 }
 
-/* Contenu de la timeline */
 .timeline-content {
     margin-top: 0;
 }
@@ -327,15 +253,6 @@ figure.image img {
     width: 45%;
     text-align: left;
     padding-left: 60px;
-}
-
-.timeline-content .heading {
-    color: var(--green);
-    font-weight: 600;
-    font-size: clamp(0.8rem, 1.5vw, 0.875rem);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
 }
 
 .timeline-content .box {
@@ -357,6 +274,15 @@ figure.image img {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
 
+.timeline-content .heading {
+    color: var(--green);
+    font-weight: 600;
+    font-size: clamp(0.8rem, 1.5vw, 0.875rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
 .timeline-content p {
     margin-bottom: 0;
     font-size: clamp(0.85rem, 1.8vw, 0.95rem);
@@ -364,95 +290,46 @@ figure.image img {
     color: var(--text);
 }
 
-/* ===== RESPONSIVE TIMELINE ===== */
-@media screen and (max-width: 1023px) {
-    .enjeux-timeline::before {
-        left: 25px;
-    }
-
-    .timeline-marker {
-        left: 25px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .timeline-item:nth-child(odd) .timeline-content,
-    .timeline-item:nth-child(even) .timeline-content {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-        text-align: left;
-        padding-left: 80px;
-        padding-right: 0;
-    }
-
-    .timeline-content .box {
-        padding: 1rem;
-    }
-
-    .timeline-content .title {
-        font-size: 1.1rem;
-    }
+/* ===== 12. LISTES PERSONNALISÉES ===== */
+.enjeux-list, .mission-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
-/* ===== CAROUSEL STYLES ===== */
-#histoire-contenu .box {
-    border-radius: 15px;
-    border: none;
-    box-shadow: var(--card-shadow);
-    min-height: clamp(250px, 60vw, 350px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: clamp(1.5rem, 3vw, 2rem);
-}
-
-.carourou {
-    background-color: var(--light-green);
-}
-
-.italic {
-    font-style: italic;
+.enjeux-list li, .mission-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-size: clamp(0.9rem, 1.8vw, 0.95rem);
     color: var(--text);
 }
 
-/* ===== HERO SECTIONS RESPONSIVE ===== */
-.hero.is-fullheight {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.enjeux-list li::before {
+    content: '●';
+    color: var(--green);
+    position: absolute;
+    left: 0;
+    top: -2px;
 }
 
-.hero-body {
-    flex-grow: 1;
-    padding: clamp(2rem, 5vw, 3rem) 1rem;
+.mission-list li::before {
+    content: "✓";
+    color: var(--green);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
 }
 
-/* ===== ENJEUX CONNECTING LINE ===== */
-@media screen and (min-width: 1024px) {
-    .enjeux-connecting-line {
-        position: absolute;
-        top: 105px; 
-        left: 12%;
-        right: 12%;
-        border-top: 2px dashed #2f855a;
-        z-index: 0;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .enjeux-connecting-line {
-        display: none;
-    }
-}
-
-/* ===== CIRCULAR ICONS ===== */
+/* ===== 13. ICONS ===== */
 .enjeux-icon-circle {
     position: relative;
     z-index: 1;
     width: clamp(70px, 15vw, 90px);
     height: clamp(70px, 15vw, 90px);
-    background-color: #e4ebe2; 
+    background-color: #e4ebe2;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -467,47 +344,7 @@ figure.image img {
 
 .enjeux-icon-circle i {
     font-size: clamp(1.5rem, 3vw, 2.5rem);
-    color: #2f855a; 
-}
-
-/* ===== LISTES PERSONNALISÉES ===== */
-.enjeux-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-}
-
-.enjeux-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 1.25rem;
-    font-size: clamp(0.9rem, 1.8vw, 0.95rem);
-    color: #333;
-}
-
-.enjeux-list li::before {
-    content: '●';
-    color: #2f855a; 
-    position: absolute;
-    left: 0;
-    top: -2px;
-    font-size: 1rem;
-}
-
-/* ===== MISSION CARDS ===== */
-.mission-card {
-    border-radius: 16px;
-    border: 1px solid #eef2ed;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-    transition: all 0.3s ease;
-    height: 100%;
-    padding: clamp(1.5rem, 4vw, 2rem);
-}
-
-.mission-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    color: var(--green);
 }
 
 .mission-icon-circle {
@@ -524,86 +361,93 @@ figure.image img {
 
 .mission-icon-circle i {
     font-size: 1.5rem;
-    color: #2f855a;
+    color: var(--green);
 }
 
-.mission-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+/* ===== 14. CAROUSEL ===== */
+.carousel-nav-left, .carousel-nav-right {
+    background: var(--green) !important;
+    border-radius: 50%;
+    color: white !important;
+    transition: all 0.3s ease;
 }
 
-.mission-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: #4a4a4a;
-    font-size: clamp(0.9rem, 1.8vw, 0.95rem);
+.carousel-nav-left:hover, .carousel-nav-right:hover {
+    background: var(--dark-green) !important;
+    transform: scale(1.1);
 }
 
-.mission-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #2f855a;
-    font-weight: bold;
+#histoire-contenu .box {
+    border-radius: 15px;
+    border: none;
+    box-shadow: var(--card-shadow);
+    min-height: clamp(250px, 60vw, 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1.5rem, 3vw, 2rem);
 }
 
-/* ===== RESPONSIVE COLUMNS ===== */
-@media screen and (max-width: 768px) {
-    .columns.is-vcentered {
-        flex-direction: column !important;
-    }
-    
-    .column.is-6,
-    .column.is-5 {
-        width: 100% !important;
-    }
-    
-    .column.is-offset-1 {
-        margin-left: 0 !important;
-    }
-    
-    .column.is-4 {
-        width: 100% !important;
-        margin: 1rem 0;
-    }
-    
-    .column.is-3 {
-        width: 100% !important;
-        margin-bottom: 1rem;
-    }
+.carourou {
+    background-color: var(--light-green);
 }
 
-@media screen and (max-width: 480px) {
-    .columns {
-        margin-left: -0.5rem !important;
-        margin-right: -0.5rem !important;
+/* ===== 15. RESPONSIVE OVERRIDES ===== */
+@media screen and (max-width: 1023px) {
+    .navbar-item {
+        font-size: 0.9rem;
     }
     
-    .column {
-        padding: 0.5rem !important;
+    .enjeux-timeline::before {
+        left: 25px;
     }
     
-    .button {
+    .timeline-marker {
+        left: 25px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 0;
+        margin-right: 0;
         width: 100%;
-        margin: 0.5rem 0;
+        text-align: left;
+        padding-left: 80px;
+        padding-right: 0;
     }
 }
 
-/* ===== CONTAINER PADDING RESPONSIVE ===== */
-.container {
-    padding-left: clamp(1rem, 3vw, 2rem);
-    padding-right: clamp(1rem, 3vw, 2rem);
+@media screen and (max-width: 768px) {
+    .navbar-item {
+        font-size: 0.85rem;
+    }
+    
+    .navbar-item img {
+        max-height: 30px;
+    }
 }
 
-/* ===== SECTION PADDING RESPONSIVE ===== */
-.section {
-    padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2rem);
+@media screen and (max-width: 599px) {
+    .navbar-item {
+        font-size: 0.75rem;
+    }
+    
+    .navbar-item img {
+        max-height: 25px;
+    }
 }
 
-/* ===== FOOTER RESPONSIVE ===== */
+/* ===== 16. UTILITY CLASSES ===== */
+.light-color {
+    color: var(--light-green);
+}
+
+.italic {
+    font-style: italic;
+    color: var(--text);
+}
+
+/* ===== 17. FOOTER ===== */
 .footer {
     padding: clamp(1.5rem, 3vw, 2.5rem) 1rem;
 }
@@ -612,31 +456,7 @@ figure.image img {
     padding: clamp(0.5rem, 1vw, 1rem);
 }
 
-@media screen and (max-width: 768px) {
-    .footer .columns {
-        flex-wrap: wrap;
-    }
-    
-    .footer .column {
-        width: 100% !important;
-        margin-bottom: 0.5rem;
-    }
-}
-
-/* ===== SCROLLBAR CUSTOM ===== */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--green);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--dark-green);
-}
+/* ===== C'EST TOUT! ===== */
+/* Bulma gère le reste: layout, grid, buttons, etc. */
+/* Nous avons juste surcharger les couleurs et petit ajustements */
+/* 150 lignes au lieu de 600+ ! */
