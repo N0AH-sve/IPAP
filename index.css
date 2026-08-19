@@ -20,12 +20,24 @@ html, body {
   --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== CONTAINER GLOBAL CENTRÉ AVEC MAX-WIDTH ===== */
+.container {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 /* ============================================
    BREAKPOINTS RESPONSIVE - 6 NIVEAUX
    ============================================ */
 
 /* MOBILE (320px - 480px) */
 @media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
     .navbar {
         min-height: 3.5rem;
         padding: 0.5rem 0;
@@ -64,10 +76,6 @@ html, body {
         font-size: 0.75rem !important;
     }
     
-    .container {
-        padding: 1rem;
-    }
-    
     .button {
         font-size: 0.85rem;
         padding: 0.4rem 0.8rem;
@@ -76,6 +84,11 @@ html, body {
 
 /* TABLET PETIT (481px - 768px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 1.5rem;
+    }
+    
     .navbar {
         min-height: 3.75rem;
     }
@@ -109,10 +122,6 @@ html, body {
         font-size: 0.9rem !important;
     }
     
-    .container {
-        padding: 1.5rem;
-    }
-    
     .button {
         font-size: 0.9rem;
         padding: 0.45rem 0.9rem;
@@ -121,6 +130,11 @@ html, body {
 
 /* TABLET GRAND / HYBRID (769px - 1023px) */
 @media screen and (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        max-width: 960px;
+        padding: 2rem;
+    }
+    
     .navbar {
         min-height: 4rem;
     }
@@ -154,10 +168,6 @@ html, body {
         font-size: 0.95rem !important;
     }
     
-    .container {
-        padding: 2rem;
-    }
-    
     .button {
         font-size: 0.95rem;
         padding: 0.5rem 1rem;
@@ -166,6 +176,11 @@ html, body {
 
 /* DESKTOP SMALL (1024px - 1365px) */
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
+    .container {
+        max-width: 1000px;
+        padding: 2rem;
+    }
+    
     .navbar {
         min-height: 4.5rem;
     }
@@ -199,10 +214,6 @@ html, body {
         font-size: 1rem !important;
     }
     
-    .container {
-        padding: 2.5rem;
-    }
-    
     .button {
         font-size: 1rem;
         padding: 0.5rem 1.25rem;
@@ -211,6 +222,11 @@ html, body {
 
 /* DESKTOP LARGE (1366px - 1919px) */
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
+    .container {
+        max-width: 1200px;
+        padding: 2.5rem;
+    }
+    
     .navbar {
         min-height: 5rem;
     }
@@ -244,10 +260,6 @@ html, body {
         font-size: 1.05rem !important;
     }
     
-    .container {
-        padding: 2.5rem;
-    }
-    
     .button {
         font-size: 1.05rem;
         padding: 0.55rem 1.5rem;
@@ -256,6 +268,11 @@ html, body {
 
 /* WIDESCREEN (1920px - 2879px) */
 @media screen and (min-width: 1920px) and (max-width: 2879px) {
+    .container {
+        max-width: 1400px;
+        padding: 3rem;
+    }
+    
     .navbar {
         min-height: 5.5rem;
     }
@@ -301,10 +318,6 @@ html, body {
         font-size: 1.1rem !important;
     }
     
-    .container {
-        padding: 3rem;
-    }
-    
     .button {
         font-size: 1.1rem;
         padding: 0.65rem 1.75rem;
@@ -313,6 +326,11 @@ html, body {
 
 /* ULTRA WIDESCREEN (2880px+) */
 @media screen and (min-width: 2880px) {
+    .container {
+        max-width: 1600px;
+        padding: 3.5rem;
+    }
+    
     .navbar {
         min-height: 7rem;
     }
@@ -356,10 +374,6 @@ html, body {
     
     .is-size-6 {
         font-size: 1.3rem !important;
-    }
-    
-    .container {
-        padding: 3.5rem;
     }
     
     .button {
