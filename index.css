@@ -223,21 +223,79 @@ html, body {
 /* DESKTOP LARGE (1366px - 1919px) */
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
     .container {
-        max-width: 1200px;
-        padding: 2.5rem;
+        max-width: 1100px;
+        padding: 2rem;
     }
     
     .navbar {
-        min-height: 5rem;
+        min-height: 3.5rem;
     }
     
     .navbar-item {
-        font-size: 1rem;
-        padding: 0.75rem 1.5rem;
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
     }
     
     .navbar-item img {
-        max-height: 2.75rem;
+        max-height: 2rem;
+    }
+    
+    .title.is-1 {
+        font-size: 2.25rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 2rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 1.2rem !important;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 0.95rem !important;
+    }
+    
+    .subtitle.is-6 {
+        font-size: 0.85rem !important;
+    }
+    
+    .is-size-5 {
+        font-size: 0.95rem !important;
+    }
+    
+    .is-size-6 {
+        font-size: 0.9rem !important;
+    }
+    
+    .button {
+        font-size: 0.9rem;
+        padding: 0.45rem 1rem;
+    }
+}
+
+/* WIDESCREEN (1920px - 2879px) */
+@media screen and (min-width: 1920px) and (max-width: 2879px) {
+    .container {
+        max-width: 1300px;
+        padding: 2.75rem;
+    }
+    
+    .navbar {
+        min-height: 4.5rem;
+    }
+    
+    .navbar-item {
+        font-size: 0.95rem;
+        padding: 0.65rem 1.25rem;
+    }
+    
+    .navbar-item img {
+        max-height: 2.5rem;
     }
     
     .title.is-1 {
@@ -260,66 +318,20 @@ html, body {
         font-size: 1.05rem !important;
     }
     
-    .button {
-        font-size: 1.05rem;
-        padding: 0.55rem 1.5rem;
-    }
-}
-
-/* WIDESCREEN (1920px - 2879px) */
-@media screen and (min-width: 1920px) and (max-width: 2879px) {
-    .container {
-        max-width: 1200px;
-        padding: 2.5rem;
-    }
-    
-    .navbar {
-        min-height: 3.5rem;
-    }
-    
-    .navbar-item {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem;
-    }
-    
-    .navbar-item img {
-        max-height: 2rem;
-    }
-    
-    .title.is-1 {
-        font-size: 2.5rem !important;
-    }
-    
-    .title.is-2 {
-        font-size: 2.25rem !important;
-    }
-    
-    .title.is-3 {
-        font-size: 1.8rem !important;
-    }
-    
-    .title.is-4 {
-        font-size: 1.4rem !important;
-    }
-    
-    .subtitle.is-5 {
-        font-size: 1rem !important;
-    }
-    
     .subtitle.is-6 {
-        font-size: 0.9rem !important;
-    }
-    
-    .is-size-5 {
-        font-size: 1rem !important;
-    }
-    
-    .is-size-6 {
         font-size: 0.95rem !important;
     }
     
+    .is-size-5 {
+        font-size: 1.1rem !important;
+    }
+    
+    .is-size-6 {
+        font-size: 1rem !important;
+    }
+    
     .button {
-        font-size: 0.95rem;
+        font-size: 1rem;
         padding: 0.5rem 1.25rem;
     }
 }
@@ -504,9 +516,15 @@ html, body {
     min-height: calc(100vh - 3.5rem);
 }
 
-@media screen and (min-width: 1920px) and (max-width: 2879px) {
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
     #accueil-titre .hero-body {
         min-height: calc(100vh - 3.5rem);
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2879px) {
+    #accueil-titre .hero-body {
+        min-height: calc(100vh - 4.5rem);
     }
 }
 
