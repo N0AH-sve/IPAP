@@ -219,50 +219,50 @@ html, body {
     }
 }
 
-/* ★ DESKTOP LARGE (1366px - 1919px) - TU ES ICI! ★ */
+/* ★ DESKTOP LARGE (1366px - 1919px) - SUPER COMPACT! ★ */
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
     .container {
-        max-width: 1100px !important;
-        padding: 2rem !important;
+        max-width: 1050px !important;
+        padding: 1.75rem !important;
     }
     
     /* OVERRIDE COMPLET DE LA NAVBAR - BULMA NE PEUT PAS INTERFERER */
     .navbar {
-        min-height: 3.5rem !important;
+        min-height: 2.75rem !important;
         padding: 0 !important;
         height: auto !important;
     }
     
     .navbar-brand {
-        min-height: 3.5rem !important;
+        min-height: 2.75rem !important;
         padding: 0 !important;
         display: flex !important;
         align-items: center !important;
     }
     
     .navbar-burger {
-        min-height: 3.5rem !important;
-        min-width: 3.5rem !important;
+        min-height: 2.75rem !important;
+        min-width: 2.75rem !important;
         padding: 0 !important;
     }
     
     .navbar-menu {
         padding: 0 !important;
-        min-height: 3.5rem !important;
+        min-height: 2.75rem !important;
     }
     
     .navbar-end {
         display: flex !important;
         align-items: center !important;
-        min-height: 3.5rem !important;
+        min-height: 2.75rem !important;
         padding: 0 !important;
     }
     
     .navbar-item {
-        font-size: 0.85rem !important;
-        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+        padding: 0.4rem 0.85rem !important;
         height: auto !important;
-        line-height: 1.5 !important;
+        line-height: 1.4 !important;
     }
     
     .navbar-item.is-tab {
@@ -270,58 +270,58 @@ html, body {
     }
     
     .navbar-item img {
-        max-height: 2rem !important;
+        max-height: 1.5rem !important;
         width: auto !important;
     }
     
     .navbar-item.has-dropdown {
-        min-height: 3.5rem !important;
+        min-height: 2.75rem !important;
     }
     
     /* Bouton Contact dans navbar */
     .navbar-item .button {
-        font-size: 0.85rem !important;
-        padding: 0.4rem 0.8rem !important;
+        font-size: 0.75rem !important;
+        padding: 0.3rem 0.7rem !important;
     }
     
-    /* Titres */
+    /* Titres - réduits */
     .title.is-1 {
-        font-size: 2.25rem !important;
+        font-size: 1.95rem !important;
     }
     
     .title.is-2 {
-        font-size: 2rem !important;
+        font-size: 1.75rem !important;
     }
     
     .title.is-3 {
-        font-size: 1.5rem !important;
+        font-size: 1.3rem !important;
     }
     
     .title.is-4 {
-        font-size: 1.2rem !important;
+        font-size: 1.05rem !important;
     }
     
-    /* Subtitres */
+    /* Subtitres - réduits */
     .subtitle.is-5 {
-        font-size: 0.95rem !important;
+        font-size: 0.9rem !important;
     }
     
     .subtitle.is-6 {
-        font-size: 0.85rem !important;
+        font-size: 0.8rem !important;
     }
     
     .is-size-5 {
-        font-size: 0.95rem !important;
+        font-size: 0.9rem !important;
     }
     
     .is-size-6 {
-        font-size: 0.9rem !important;
+        font-size: 0.85rem !important;
     }
     
     /* Boutons généraux */
     .button {
-        font-size: 0.9rem !important;
-        padding: 0.45rem 1rem !important;
+        font-size: 0.85rem !important;
+        padding: 0.4rem 0.9rem !important;
     }
 }
 
@@ -548,7 +548,7 @@ html, body {
 
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
     #accueil-titre .hero-body {
-        min-height: calc(100vh - 3.5rem) !important;
+        min-height: calc(100vh - 2.75rem) !important;
     }
 }
 
