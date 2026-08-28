@@ -274,16 +274,16 @@ html, body {
     }
     
     .navbar {
-        min-height: 5rem;
+        min-height: 3.5rem;
     }
     
     .navbar-item {
-        font-size: 0.95rem;
-        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
     }
     
     .navbar-item img {
-        max-height: 2.5rem;
+        max-height: 2rem;
     }
     
     .title.is-1 {
