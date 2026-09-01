@@ -1,0 +1,828 @@
+/* ===============================================
+   IPAP - FEUILLE DE STYLES RESPONSIVE COMPLÈTE
+   Optimisée pour toutes les résolutions
+   =============================================== */
+
+/* ===== VARIABLES CSS GLOBALES ===== */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #e1e3e0;
+  --green: #489C54;
+  --dark-green: #3d8944;
+  --light-green: #bfcfb0;
+  --text: #333;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== CONTAINER GLOBAL CENTRÉ AVEC MAX-WIDTH ===== */
+.container {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* ============================================
+   BREAKPOINTS RESPONSIVE - 6 NIVEAUX
+   ============================================ */
+
+/* MOBILE (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    
+    .navbar {
+        min-height: 3.5rem;
+    }
+    
+    .navbar-item {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    .navbar-item img {
+        max-height: 1.5rem;
+    }
+    
+    .title.is-1 {
+        font-size: 1.75rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 1.5rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 1.25rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 1.1rem !important;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 0.85rem !important;
+    }
+    
+    .subtitle.is-6 {
+        font-size: 0.75rem !important;
+    }
+    
+    .button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* TABLET PETIT (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 1.5rem;
+    }
+    
+    .navbar {
+        min-height: 3.5rem;
+    }
+    
+    .navbar-item {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .navbar-item img {
+        max-height: 1.8rem;
+    }
+    
+    .title.is-1 {
+        font-size: 2rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 1.75rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 1.4rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 1.2rem !important;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 0.9rem !important;
+    }
+    
+    .button {
+        font-size: 0.9rem;
+        padding: 0.45rem 0.9rem;
+    }
+}
+
+/* TABLET GRAND / HYBRID (769px - 1023px) */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        max-width: 960px;
+        padding: 2rem;
+    }
+    
+    .navbar {
+        min-height: 3.5rem;
+    }
+    
+    .navbar-item {
+        font-size: 0.9rem;
+        padding: 0.75rem 1rem;
+    }
+    
+    .navbar-item img {
+        max-height: 2.25rem;
+    }
+    
+    .title.is-1 {
+        font-size: 2.25rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 2rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 1.6rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 1.3rem !important;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 0.95rem !important;
+    }
+    
+    .button {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* DESKTOP SMALL (1024px - 1365px) */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    .container {
+        max-width: 1000px;
+        padding: 2rem;
+    }
+    
+    .navbar {
+        min-height: 3.5rem !important;
+    }
+    
+    .navbar-item {
+        font-size: 0.95rem;
+        padding: 0.75rem 1.25rem;
+    }
+    
+    .navbar-item img {
+        max-height: 2.5rem;
+    }
+    
+    .title.is-1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 2.25rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 1.8rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 1.4rem !important;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 1rem !important;
+    }
+    
+    .button {
+        font-size: 1rem;
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+/* ★ DESKTOP LARGE (1366px - 1919px) - SUPER COMPACT! ★ */
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    .container {
+        max-width: 1050px !important;
+        padding: 1.75rem !important;
+    }
+    
+    /* OVERRIDE COMPLET DE LA NAVBAR - BULMA NE PEUT PAS INTERFERER */
+    .navbar {
+        min-height: 2.75rem !important;
+        padding: 0 !important;
+        height: auto !important;
+    }
+    
+    .navbar-brand {
+        min-height: 2.75rem !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .navbar-burger {
+        min-height: 2.75rem !important;
+        min-width: 2.75rem !important;
+        padding: 0 !important;
+    }
+    
+    .navbar-menu {
+        padding: 0 !important;
+        min-height: 2.75rem !important;
+    }
+    
+    .navbar-end {
+        display: flex !important;
+        align-items: center !important;
+        min-height: 2.75rem !important;
+        padding: 0 !important;
+    }
+    
+    .navbar-item {
+        font-size: 0.8rem !important;
+        padding: 0.4rem 0.85rem !important;
+        height: auto !important;
+        line-height: 1.4 !important;
+    }
+    
+    .navbar-item.is-tab {
+        border-bottom: none !important;
+    }
+    
+    .navbar-item img {
+        max-height: 1.5rem !important;
+        width: auto !important;
+    }
+    
+    .navbar-item.has-dropdown {
+        min-height: 2.75rem !important;
+    }
+    
+    /* Bouton Contact dans navbar */
+    .navbar-item .button {
+        font-size: 0.75rem !important;
+        padding: 0.3rem 0.7rem !important;
+    }
+    
+    /* Titres - réduits */
+    .title.is-1 {
+        font-size: 1.95rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 1.75rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 1.3rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 1.05rem !important;
+    }
+    
+    /* Subtitres - réduits */
+    .subtitle.is-5 {
+        font-size: 0.9rem !important;
+    }
+    
+    .subtitle.is-6 {
+        font-size: 0.8rem !important;
+    }
+    
+    .is-size-5 {
+        font-size: 0.9rem !important;
+    }
+    
+    .is-size-6 {
+        font-size: 0.85rem !important;
+    }
+    
+    /* Boutons généraux */
+    .button {
+        font-size: 0.85rem !important;
+        padding: 0.4rem 0.9rem !important;
+    }
+}
+
+/* WIDESCREEN (1920px - 2879px) */
+@media screen and (min-width: 1920px) and (max-width: 2879px) {
+    .container {
+        max-width: 1300px !important;
+        padding: 2.75rem !important;
+    }
+    
+    .navbar {
+        min-height: 4.5rem !important;
+        padding: 0 !important;
+    }
+    
+    .navbar-brand {
+        min-height: 4.5rem !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .navbar-burger {
+        min-height: 4.5rem !important;
+        min-width: 4.5rem !important;
+    }
+    
+    .navbar-menu {
+        padding: 0 !important;
+        min-height: 4.5rem !important;
+    }
+    
+    .navbar-end {
+        display: flex !important;
+        align-items: center !important;
+        min-height: 4.5rem !important;
+        padding: 0 !important;
+    }
+    
+    .navbar-item {
+        font-size: 0.95rem !important;
+        padding: 0.65rem 1.25rem !important;
+        height: auto !important;
+    }
+    
+    .navbar-item img {
+        max-height: 2.5rem !important;
+    }
+    
+    .title.is-1 {
+        font-size: 2.75rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 2.5rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 2rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 1.5rem !important;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 1.05rem !important;
+    }
+    
+    .subtitle.is-6 {
+        font-size: 0.95rem !important;
+    }
+    
+    .is-size-5 {
+        font-size: 1.1rem !important;
+    }
+    
+    .is-size-6 {
+        font-size: 1rem !important;
+    }
+    
+    .button {
+        font-size: 1rem !important;
+        padding: 0.5rem 1.25rem !important;
+    }
+}
+
+/* ULTRA WIDESCREEN (2880px+) */
+@media screen and (min-width: 2880px) {
+    .container {
+        max-width: 1600px !important;
+        padding: 3.5rem !important;
+    }
+    
+    .navbar {
+        min-height: 7rem !important;
+        padding: 0 !important;
+    }
+    
+    .navbar-brand {
+        min-height: 7rem !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .navbar-burger {
+        min-height: 7rem !important;
+        min-width: 7rem !important;
+    }
+    
+    .navbar-menu {
+        padding: 0 !important;
+        min-height: 7rem !important;
+    }
+    
+    .navbar-end {
+        display: flex !important;
+        align-items: center !important;
+        min-height: 7rem !important;
+        padding: 0 !important;
+    }
+    
+    .navbar-item {
+        font-size: 1.3rem !important;
+        padding: 1.25rem 2rem !important;
+        height: auto !important;
+    }
+    
+    .navbar-item img {
+        max-height: 3.5rem !important;
+    }
+    
+    .title.is-1 {
+        font-size: 3.5rem !important;
+    }
+    
+    .title.is-2 {
+        font-size: 3.25rem !important;
+    }
+    
+    .title.is-3 {
+        font-size: 2.75rem !important;
+    }
+    
+    .title.is-4 {
+        font-size: 2rem !important;
+    }
+    
+    .subtitle.is-5 {
+        font-size: 1.35rem !important;
+    }
+    
+    .subtitle.is-6 {
+        font-size: 1.2rem !important;
+    }
+    
+    .is-size-5 {
+        font-size: 1.5rem !important;
+    }
+    
+    .is-size-6 {
+        font-size: 1.3rem !important;
+    }
+    
+    .button {
+        font-size: 1.3rem !important;
+        padding: 0.75rem 2rem !important;
+    }
+}
+
+/* ===== BOUTONS ET COULEURS (Tous les breakpoints) ===== */
+.button.is-primary {
+    background-color: var(--green) !important;
+    border-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.button.is-primary:hover {
+    background-color: var(--dark-green) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(72, 156, 84, 0.3);
+}
+
+.light-color {
+    color: var(--light-green);
+}
+
+.back-is-success {
+    background-color: var(--light-green);
+}
+
+.back-is-dark {
+    background-color: var(--dark-green);
+}
+
+.has-text-success {
+    color: var(--dark-green) !important;
+}
+
+.has-text-light-green {
+    color: var(--light-green) !important;
+}
+
+/* ===== SECTION ACCUEIL - BACKGROUND IMAGE ===== */
+#accueil-titre {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                      url('assets/logo_ipap.png');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#accueil-titre .hero-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: calc(100vh - 3.5rem);
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    #accueil-titre .hero-body {
+        min-height: calc(100vh - 2.75rem) !important;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2879px) {
+    #accueil-titre .hero-body {
+        min-height: calc(100vh - 4.5rem) !important;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    #accueil-titre .hero-body {
+        min-height: calc(100vh - 7rem) !important;
+    }
+}
+
+#accueil-titre .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accueil-titre .title {
+    color: white !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== SCROLL DOWN ARROW ===== */
+.scroll-down-arrow {
+    color: inherit;
+    display: inline-block;
+    animation: bounce 2s infinite;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+}
+
+.scroll-down-arrow:hover {
+    opacity: 1;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* ===== CARTES DE CONTACT ===== */
+.contact-card-custom {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    height: 100%;
+    border-bottom: 5px solid var(--green);
+    transition: all 0.3s ease;
+}
+
+.contact-card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(72, 156, 84, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-card-custom {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.profile-photo-small {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--light-green);
+}
+
+@media screen and (max-width: 768px) {
+    .profile-photo-small {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0.75rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .profile-photo-small {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    .profile-photo-small {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 2rem;
+    }
+}
+
+/* ===== SPACING RESPONSIVE ===== */
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1920px) {
+    .mb-6 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    .mb-6 {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.section {
+    padding: 3rem 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section {
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    .section {
+        padding: 5rem 3rem;
+    }
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1920px) {
+    .py-6 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    .py-6 {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+
+.px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+@media screen and (min-width: 1920px) {
+    .px-5 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    .px-5 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+/* ===== COLUMNS RESPONSIVE ===== */
+.columns {
+    margin-bottom: -0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+    .columns {
+        margin-bottom: -0.5rem;
+    }
+    
+    .column {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .columns {
+        margin-bottom: -1rem;
+    }
+    
+    .column {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    .columns {
+        margin-bottom: -1.25rem;
+    }
+    
+    .column {
+        padding: 1.25rem;
+    }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    padding: 3rem 1.5rem;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 2rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer {
+        padding: 4rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 2880px) {
+    .footer {
+        padding: 5rem 3rem;
+        font-size: 1.15rem;
+    }
+}
+
+/* ===== ANIMATIONS RESPONSIVES ===== */
+@media screen and (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Fix carrousel mobile */
+.carousel {
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+}
+
+.carousel .item-1,
+.carousel .item-2,
+.carousel .item-3,
+.carousel .item-4 {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel .item-1,
+    .carousel .item-2,
+    .carousel .item-3,
+    .carousel .item-4 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+}

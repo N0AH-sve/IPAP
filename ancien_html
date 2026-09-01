@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="fr" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPAP - Anticiper & Choisir</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css"> -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar is-fixed-top is-white has-shadow" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#"><img src="assets/Title.png" alt="Logo"></a>
+                <a role="button" class="navbar-burger" id="burger" data-target="navMenu">
+                </a>
+            </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#accueil-titre">Accueil</a>
+                    <a class="navbar-item" href="#accueil-contenu">Philosophie</a>
+                                        <a class="navbar-item" href="#methode-globale-titre">Approche</a>
+                                        <a class="navbar-item" href="#missions-titre">Missions</a>
+                    <a class="navbar-item" href="#parcours-titre">Parcours</a>
+                    <a class="navbar-item" href="#enjeux-titre">Enjeux</a>
+                    <a class="navbar-item" href="#accompagnement">ADN</a>
+                    <a class="navbar-item" href="#histoire">Histoires</a>
+                    <div class="navbar-item">
+                        <a href="#contact" class="button is-primary is-rounded">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="accueil-titre" class="hero is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1"><span class="has-text-light-green">Anticiper</span> aujourd'hui pour <br><span class="has-text-light-green">choisir</span> demain</h1>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-">
+                <a href="missions/mission.html" class="scroll-down-arrow button is-primary is-rounded mb-6">Découvrir notre approche</a>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#accueil-contenu" class="scroll-down-arrow has-text-success"><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+
+<section id="accueil-titre" class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-1">
+                <span class="has-text-light-green">Anticiper</span> aujourd'hui pour <br>
+                <span class="has-text-light-green">choisir</span> demain
+            </h1>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="is-relative mb-6 px-5" style="width: 100%;">
+            <!-- Centered Arrow -->
+            <div class="has-text-centered">
+                <a href="#accueil-contenu" class="has-text-success">
+                    <i class="fas fa-chevron-down fa-3x"></i>
+                </a>
+            </div>
+            <!-- Absolute Right Button -->
+            <div style="position: absolute; right: 1.5rem; top: 50%; transform: translateY(-50%);">
+                <a href="missions/mission.html" class="button is-primary is-rounded">Découvrir notre approche</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+    <section id="accueil-contenu" class="hero is-fullheight is-white">
+        <div class="hero-body ">
+            <div class="container">
+            <div class="columns is-vcentered">
+                
+                <div class="column is-6">
+                    <figure class="image is-4by4">
+                        <img src="assets/alexandra.png" alt="Anticiper" class="is-fullwidth">
+                    </figure>
+                </div>
+                
+                <div class="column is-5 is-offset-1">
+                    <div class="mb-6">
+                        <h2 class="title is-3">Vivre en <span class="has-text-success">harmonie</span> avec vos <span class="has-text-success">choix</span></h2>
+                        <p class="subtitle is-5">Anticiper avec expertise, protéger avec sérénité, pour vivre en parfaite harmonie avec vos choix.</p>
+                    </div>
+                    <div>
+                        <h2 class="title is-3">Préparez <span class="has-text-success">votre avenir</span> </span></h2>
+                        <p class="subtitle is-5">Dans le respect de la déontologie et avec une approche pédagogique, nous travaillons en étroite collaboration avec vos conseils habituels : notaires, experts-comptables, avocats, mandataires judiciaire à la protection des majeurs et professionnels du conseil financier.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#missions-titre" class="scroll-down-arrow has-text-success "><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="enjeux-titre" class="hero is-fullheight back-is-success">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Notre approche</h2>
+            </div>
+        </div>
+
+
+    <!-- Fleche de navigation vers le bas pointant vers le contenu des missions -->
+    <div class="hero-foot">
+        <div class="container has-text-centered mb-6">
+            <a href="#methode-globale" class="scroll-down-arrow has-text-success">
+                <i class="fas fa-chevron-down fa-4x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section id="methode-globale" class="section is-light py-6">
+    <div class="container is-max-widescreen">
+        <!-- Harmonized Header -->
+        <div class="has-text-centered mb-6">
+            <h2 class="title is-2 has-text-dark mb-3">Méthode globale</h2>
+            <div class="is-flex is-justify-content-center mb-4">
+                <hr class="has-background-success" style="width: 40px; height: 3px; border: none; margin: 0;">
+            </div>
+            <p class="subtitle is-5 has-text-grey max-w-700 mx-auto">
+                Nous veillons à apporter de la <span class="has-text-success has-text-weight-semibold">sérénité</span> en prodiguant des conseils juridiques et financiers adaptés aux familles, dirigeants et aidants familiaux que nous accompagnons. Nous accordons une importance fondamentale aux <span class="has-text-success has-text-weight-semibold">besoins spécifiques</span> de chacun.
+            </p>
+        </div>
+
+        <!-- Diagram Structure -->
+        <div class="columns is-vcentered is-centered">
+            <!-- Left Column -->
+            <div class="column is-3">
+                <div class="box back-is-success has-text-dark has-text-centered mb-6" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    Assistance dans vos formalités d'urgence et démarches juridiques
+                </div>
+                <div class="box back-is-success has-text-dark has-text-centered mt-6" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    Suivi et ajustement continus de vos orientations
+                </div>
+            </div>
+
+            <!-- Center Circle -->
+            <div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
+                <div class="box back-is-success has-text-dark has-text-centered mb-4" style="border-radius: 12px; width: 100%;">
+                    Repérage des points de fragilité face à un état de vulnérabilité
+                </div>
+                <div class="back-is-dark has-text-white has-text-centered is-flex is-align-items-center is-justify-content-center title is-5 my-4" style="border-radius: 50%; width: 220px; height: 220px; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
+                    <span class="has-text-weight-bold">Étude<br>transversale de<br>votre situation</span>
+                </div>
+                <div class="box back-is-success has-text-dark has-text-centered mt-4" style="border-radius: 12px; width: 100%;">
+                    Accompagnement dans la mise en œuvre des solutions
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column is-3">
+                <div class="box back-is-success has-text-dark has-text-centered mb-6" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    Harmonisation et simplification de votre gestion patrimoniale
+                </div>
+                <div class="box back-is-success has-text-dark has-text-centered mt-6" style="border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                    Préconisations adaptées à votre situation et vos volontés
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="hero-foot">
+        <div class="container has-text-centered mb-6">
+            <a href="#missions-titre" class="scroll-down-arrow has-text-success">
+                <i class="fas fa-chevron-down fa-4x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- Debut de la section Titre : Nos Missions -->
+<section id="missions-titre" class="hero is-fullheight" style="background: url('assets/chaine.png') center/cover no-repeat; position: relative;">
+    
+    <!-- Corps du hero pour centrer le contenu verticalement -->
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns">
+                <!-- Colonne de gauche pour aligner le texte comme sur l'image -->
+                <div class="column is-6 is-offset-1-desktop">
+                    <!-- text-shadow ajoute pour garantir la lisibilite sur le fond gris clair -->
+                    <h1 class="title has-text-white" style="font-size: 4.5rem; line-height: 1.2; text-shadow: 2px 2px 8px rgba(0,0,0,0.15);">
+                        Découvrir <br>
+                        <!-- Utilisation de votre classe existante pour le vert -->
+                        <span class="has-text-success">nos missions</span> <br>
+                        sur mesure
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fleche de navigation vers le bas pointant vers le contenu des missions -->
+    <div class="hero-foot">
+        <div class="container has-text-centered mb-6">
+            <a href="#missions" class="scroll-down-arrow has-text-success">
+                <i class="fas fa-chevron-down fa-4x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Fin de la section Titre : Nos Missions -->
+
+    <!-- Debut de la section Nos Missions -->
+<section id="missions" class="section is-white py-6">
+    <div class="container is-max-widescreen">
+        
+        <!-- En-tete de la section -->
+        <div class="has-text-centered mb-6">
+            <h2 class="title is-2 has-text-dark mb-3">Nos missions</h2>
+            <div class="is-flex is-justify-content-center mb-3">
+                <hr class="has-background-success" style="width: 40px; height: 3px; border: none; margin: 0;">
+            </div>
+            <p class="subtitle is-5 has-text-grey">Un accompagnement global et sur-mesure à chaque étape de votre parcours</p>
+        </div>
+
+        <!-- Grille 2x2 responsive (2 colonnes sur PC, 1 colonne sur mobile) -->
+        <div class="columns is-multiline">
+            
+            <!-- Mission 1 : Conseil patrimonial -->
+            <div class="column is-6-desktop is-12-tablet">
+                <div class="box mission-card p-5">
+                    <div class="is-flex is-align-items-center mb-4">
+                        <div class="mission-icon-circle mr-4">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <h3 class="title is-4 has-text-dark m-0">Conseil patrimonial</h3>
+                    </div>
+                    <ul class="mission-list">
+                        <li>Audit patrimonial global & stratégie personnalisée</li>
+                        <li>Test de résilience patrimoniale pour dirigeants</li>
+                        <li>Stratégie d'anticipation et d'optimisation successorale</li>
+                        <li>Accompagnement et suivi patrimonial dans la durée</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mission 2 : Anticipation & Protection -->
+            <div class="column is-6-desktop is-12-tablet">
+                <div class="box mission-card p-5">
+                    <div class="is-flex is-align-items-center mb-4">
+                        <div class="mission-icon-circle mr-4">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </div>
+                        <h3 class="title is-4 has-text-dark m-0">Anticipation & Protection</h3>
+                    </div>
+                    <ul class="mission-list">
+                        <li>Accompagnement dédié aux situations de vulnérabilité</li>
+                        <li>Prévention et gestion globale des risques patrimoniaux</li>
+                        <li>Mise en place de solutions de protection sur-mesure</li>
+                        <li>Coordination complète (famille, notaires, conseils)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mission 3 : Stratégie d'investissement -->
+            <div class="column is-6-desktop is-12-tablet">
+                <div class="box mission-card p-5">
+                    <div class="is-flex is-align-items-center mb-4">
+                        <div class="mission-icon-circle mr-4">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="title is-4 has-text-dark m-0">Stratégie d'investissement</h3>
+                    </div>
+                    <ul class="mission-list">
+                        <li>Structuration et optimisation du patrimoine personnel</li>
+                        <li>Gestion et pilotage de la trésorerie d'entreprise</li>
+                        <li>Sélection rigoureuse de solutions d'investissement</li>
+                        <li>Suivi dynamique et arbitrages dans le temps</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mission 4 : Services patrimoniaux -->
+            <div class="column is-6-desktop is-12-tablet">
+                <div class="box mission-card p-5">
+                    <div class="is-flex is-align-items-center mb-4">
+                        <div class="mission-icon-circle mr-4">
+                            <i class="fa-regular fa-handshake"></i>
+                        </div>
+                        <h3 class="title is-4 has-text-dark m-0">Services patrimoniaux</h3>
+                    </div>
+                    <ul class="mission-list">
+                        <li>Intermédiation en assurance & opérations bancaires</li>
+                        <li>Conseil et accompagnement en transactions immobilières</li>
+                        <li>Assistance fiscale, juridique et formalités</li>
+                        <li>Secrétariat patrimonial général et privé</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Fleche de navigation vers le bas -->
+        <div class="container has-text-centered mb-6">
+                <a href="#parcours-titre" class="scroll-down-arrow has-text-success "><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+
+    </div>
+</section>
+<!-- Fin de la section Nos Missions -->
+
+
+    <section id="enjeux-titre" class="hero is-fullheight back-is-success">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Vos Enjeux</h2>
+                <p class="subtitle is-3">Vous êtes-vous déjà demandé ?</p>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#enjeux-contenu" class="scroll-down-arrow has-text-success"><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Debut de la section Vos Enjeux --><section id="enjeux-contenu" class="section is-white py-6">
+    <div class="container is-max-widescreen">
+        <!-- Harmonized Section Header -->
+        <div class="has-text-centered mb-6">
+            <h2 class="title is-2 has-text-dark mb-3">Vos enjeux</h2>
+            <div class="is-flex is-justify-content-center mb-3">
+                <hr class="has-background-success" style="width: 40px; height: 3px; border: none; margin: 0;">
+            </div>
+            <p class="subtitle is-5 has-text-grey">Vous êtes-vous déjà demandé ?</p>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="enjeux-wrapper">
+            <div class="columns is-desktop">
+                
+                <!-- Card 1: Protéger -->
+                <div class="column is-3-desktop">
+                    <div class="box p-5 is-flex is-flex-direction-column is-justify-content-between" style="border-radius: 12px; border: 1px solid #f0f0f0; height: 100%;">
+                        <div>
+                            <div class="has-text-centered mb-4">
+                                <h3 class="title is-4 has-text-dark mb-2">Protéger</h3>
+                                <div class="mission-icon-circle mx-auto my-3">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                            </div>
+                            <ul class="mission-list mb-4">
+                                <li>Que faire si un proche perd ses capacités à prendre des décisions ?</li>
+                                <li>Comment préparer l'avenir d'un enfant en situation de handicap ?</li>
+                                <li>Comment protéger une personne vulnérable sans porter atteinte à sa liberté ?</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4" style="border-top: 1px solid #f5f5f5;">
+                            <div class="is-flex is-align-items-start">
+                                <span class="icon has-text-success mr-2 mt-1">
+                                    <i class="fas fa-hands-holding-child"></i>
+                                </span>
+                                <p class="is-size-7 has-text-grey">
+                                    Anticiper la vulnérabilité, organiser la protection juridique et coordonner les solutions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Anticiper -->
+                <div class="column is-3-desktop">
+                    <div class="box p-5 is-flex is-flex-direction-column is-justify-content-between" style="border-radius: 12px; border: 1px solid #f0f0f0; height: 100%;">
+                        <div>
+                            <div class="has-text-centered mb-4">
+                                <h3 class="title is-4 has-text-dark mb-2">Anticiper</h3>
+                                <div class="mission-icon-circle mx-auto my-3">
+                                    <i class="fa-solid fa-umbrella"></i>
+                                </div>
+                            </div>
+                            <ul class="mission-list mb-4">
+                                <li>Si mon état de santé se dégrade brutalement, mes volontés seront-elles respectées ?</li>
+                                <li>Que se passera-t-il pour ma famille ou mon entreprise en cas d'incapacité prolongée ?</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4" style="border-top: 1px solid #f5f5f5;">
+                            <div class="is-flex is-align-items-start">
+                                <span class="icon has-text-success mr-2 mt-1">
+                                    <i class="fas fa-heart-pulse"></i>
+                                </span>
+                                <p class="is-size-7 has-text-grey">
+                                    Prévoir les conséquences d'un accident ou d'une maladie afin de sécuriser vos proches et votre activité.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Préserver -->
+                <div class="column is-3-desktop">
+                    <div class="box p-5 is-flex is-flex-direction-column is-justify-content-between" style="border-radius: 12px; border: 1px solid #f0f0f0; height: 100%;">
+                        <div>
+                            <div class="has-text-centered mb-4">
+                                <h3 class="title is-4 has-text-dark mb-2">Préserver</h3>
+                                <div class="mission-icon-circle mx-auto my-3">
+                                    <i class="fa-solid fa-house-chimney-user"></i>
+                                </div>
+                            </div>
+                            <ul class="mission-list mb-4">
+                                <li>Qui prendra le relais si je ne peux plus gérer mon patrimoine ?</li>
+                                <li>Qui se préoccupera de l'avenir de mes proches ?</li>
+                                <li>Comment transmettre dans les meilleures conditions ?</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4" style="border-top: 1px solid #f5f5f5;">
+                            <div class="is-flex is-align-items-start">
+                                <span class="icon has-text-success mr-2 mt-1">
+                                    <i class="fas fa-tree"></i>
+                                </span>
+                                <p class="is-size-7 has-text-grey">
+                                    Organiser la transmission, protéger les actifs et assurer la continuité de la gestion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Vivre sereinement -->
+                <div class="column is-3-desktop">
+                    <div class="box p-5 is-flex is-flex-direction-column is-justify-content-between" style="border-radius: 12px; border: 1px solid #f0f0f0; height: 100%;">
+                        <div>
+                            <div class="has-text-centered mb-4">
+                                <h3 class="title is-4 has-text-dark mb-2">Vivre sereinement</h3>
+                                <div class="mission-icon-circle mx-auto my-3">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+                            </div>
+                            <ul class="mission-list mb-4">
+                                <li>Comment prendre les bonnes décisions aujourd'hui pour être serein demain ?</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4" style="border-top: 1px solid #f5f5f5;">
+                            <div class="is-flex is-align-items-start">
+                                <span class="icon has-text-success mr-2 mt-1">
+                                    <i class="fas fa-sun"></i>
+                                </span>
+                                <p class="is-size-7 has-text-grey">
+                                    Un accompagnement global qui relie protection des personnes, patrimoine et stratégie familiale.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="has-text-centered mt-6">
+            <a href="#accompagnement" class="scroll-down-arrow has-text-success">
+                <i class="fas fa-chevron-down fa-3x"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <section id="accompagnement" class="hero is-fullheight back-is-success ">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Notre ADN</h2>
+                <p class="subtitle is-3">Éthique, Expertise et Engagement humain</p>
+                <figure class="image is-128x128 is-inline-block mb-4">
+                                <img src="assets/enjeux.png" alt="Icone temoignage">
+                            </figure>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#adn-contenu" class="scroll-down-arrow has-text-success"><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+<section id="adn-contenu" class="hero is-fullheight is-white">
+    <div class="hero-body">
+        <div class="container">
+            <div class="content has-text-centered mb-6">
+                <p class="is-size-5">
+                    Notre ADN allie l'éthique, l'expertise et l'engagement humain. Chez IPAP, nous croyons que l'accompagnement patrimonial ne se résume pas à des chiffres ou à des contrats.
+                    Ambassadrices de <strong>France TUTELLE</strong>, nous soutenons bénévolement les aidants familiaux, tuteurs, curateurs et habilités familiaux.
+                </p>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="card card-equal-height">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/pedagogie.png" alt="Pédagogie">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-success">Pédagogie</p>
+                            <p class="has-text-justified">Nous avons à cœur de rendre accessibles des sujets sensibles et parfois perçus comme complexes. Notre mission : offrir à nos clients la clarté nécessaire pour faire des choix éclairés.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card card-equal-height">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/deontologie.png" alt="Déontologie">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-success">Déontologie</p>
+                            <p class="has-text-justified">Nous exerçons notre métier avec rigueur et intégrité. Adhérentes à la CNCGP et soumises aux exigences de l'AMF, nous garantissons transparence, loyauté et conformité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card card-equal-height">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/cooperation.png" alt="Coopération">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-4 has-text-success">Coopération</p>
+                            <p class="has-text-justified"></p>Nous privilégions une approche globale et pluridisciplinaire en travaillant en partenariat avec vos conseils habituels : notaires, avocats, experts-comptables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-foot">
+        <div class="container has-text-centered mb-6">
+            <a href="#histoire" class="scroll-down-arrow has-text-success"><i class="fas fa-chevron-down fa-4x"></i></a>
+        </div>
+    </div>
+</section>
+
+
+    <section id="parcours-titre" class="hero is-fullheight back-is-success">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Mon Parcours</h2>
+                <p class="subtitle is-3">Une expertise au service de la vulnérabilité</p>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#parcours-contenu" class="scroll-down-arrow has-text-success "><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="parcours-contenu" class="hero is-fullheight is-light">
+        <div class="hero-body">
+            <div class="container">
+                
+                <div class="has-text-centered mb-6">
+                    <h3 class="title is-3 is-italic has-text-weight-normal mb-3">
+                        <span class="has-text-success fs-1 mr-2">&ldquo;</span>
+                        J'ai fondé IPAP pour accompagner les familles avec des solutions concrètes et humaines.
+                        <span class="has-text-success fs-1 ml-2">&rdquo;</span>
+                    </h3>
+                    <div class="is-flex is-justify-content-center">
+                        <hr class="back-is-dark  my-2" style="width: 40px; height: 3px; border: none;">
+                    </div>
+                    <p class="subtitle is-4 has-text-weight-bold has-text-dark mt-4">Alexandra Santerre</p>
+                </div>
+
+                <div class="columns is-vcentered">
+                    
+                    <div class="column is-5">
+                        <figure class="image">
+                            <img src="assets/alexandraa.png" alt="Alexandra Santerre" style="border-radius: 12px; object-fit: cover; width: 100%;">
+                        </figure>
+                    </div>
+
+                    <div class="column is-6 is-offset-1">
+                        
+                        <div class="media mb-5">
+                            <figure class="media-left">
+                                <p class="image is-48x48">
+                                    <img src="assets/chapeau.png" alt="Icone Diplome">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <p class="content is-size-5">
+                                    Diplômée de l'IAE et certifiée AUREP en Gestion de Patrimoine des Séniors, 
+                                    <strong class="has-text-success">j'accompagne particuliers et professionnels</strong> 
+                                    dans la protection et la transmission de leur patrimoine, en anticipant les situations de vulnérabilité.
+                                </p>
+                                <hr class="has-background-success-light my-3" style="width: 30px; height: 2px; border: none;">
+                            </div>
+                        </div>
+
+                        <div class="media mb-5">
+                            <figure class="media-left">
+                                <p class="image is-48x48">
+                                    <img src="assets/hands.png" alt="Icone Engagement">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <p class="content is-size-5">
+                                    Engagée auprès de <strong class="has-text-success">France Tutelle</strong>, je sensibilise à ces enjeux et à leur anticipation.
+                                </p>
+                                <hr class="has-background-success-light my-3" style="width: 30px; height: 2px; border: none;">
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <figure class="media-left">
+                                <p class="image is-48x48">
+                                    <img src="assets/home.png" alt="Icone Maison IPAP">
+                                </p>
+                            </figure>
+                            <div class="media-content">
+                                <p class="content is-size-5">
+                                    Forte de cette expérience, <strong class="has-text-success">j'ai fondé IPAP &ndash; Intuitu Personae Accompagnement Patrimonial</strong>, 
+                                    implanté dans l'Ouest, pour offrir un accompagnement humain, personnalisé et pluridisciplinaire.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#enjeux-titre" class="scroll-down-arrow has-text-success"><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+
+<section id="histoire" class="hero is-fullheight  back-is-success">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="title is-1">Histoires partagées</h2>
+                <p class="subtitle is-3">Ils nous ont fait confiance</p>
+
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#histoire-contenu" class="scroll-down-arrow has-text-success"><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+    </section>
+
+<!-- Debut de la section Histoires Partagees -->
+<section id="histoire-contenu" class="section is-light py-6">
+    <div class="container is-max-desktop">
+        
+        <!-- En-tete de la section (Titre, Ligne d'accentuation et Sous-titre) -->
+        <div class="has-text-centered mb-6">
+            <h2 class="title is-2 has-text-dark mb-2">Histoires partagées</h2>
+            <div class="is-flex is-justify-content-center mb-3">
+                <hr class="back-is-success" style="width: 30px; height: 3px; border: none; margin: 0;">
+            </div>
+            <p class="subtitle is-5 has-text-grey">Ils nous ont fait confiance</p>
+        </div>
+
+        <!-- Structure pour restreindre la largeur du carrousel -->
+        <div class="columns is-centered">
+            <div class="column is-9-desktop is-11-tablet">
+                
+                <!-- Carrousel de temoignages -->
+                <div id="carousel-demo" class="carousel">
+                    
+                    <!-- Temoignage 1 -->
+                    <div class="item-1 px-3">
+                        <div class="box has-text-centered py-6 px-5" style="background-color: #e4ebe2; border-radius: 16px; box-shadow: none;">
+                            <!-- Illustration/Icone au-dessus du texte -->
+                            <figure class="image is-64x64 mx-auto mb-4">
+            <img src="assets/bulle-icone.jpg" alt="Icone temoignage">
+        </figure>
+                            <!-- Texte de la citation -->
+                            <p class="is-size-5 has-text-dark mb-5" style="line-height: 1.6;">
+                                “Après mon burn-out, j'avais tout laissé tomber... Grâce à l'accompagnement patient et bienveillant d'Alexandra Santerre, j'ai pu remettre ma situation fiscale à plat, retrouver ma sérénité… et recréer une société.”
+                            </p>
+                            <!-- Auteur en vert -->
+                            <p class="is-size-6 has-text-success has-text-weight-medium">
+                                Fabien, 49 ans
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Temoignage 2 -->
+                    <div class="item-2 px-3">
+                        <div class="box has-text-centered py-6 px-5" style="background-color: #e4ebe2; border-radius: 16px; box-shadow: none;">
+                            <figure class="image is-64x64 mx-auto mb-4">
+            <img src="assets/bulle-icone.jpg" alt="Icone temoignage">
+        </figure>
+                            <p class="is-size-5 has-text-dark mb-5" style="line-height: 1.6;">
+                                “Grâce à l'écoute et à l'accompagnement d'Alexandra, j'ai appris à comprendre mon patrimoine, à ajuster mon train de vie et à envisager l'avenir sereinement.”
+                            </p>
+                            <p class="is-size-6 has-text-success has-text-weight-medium">
+                                Sylvie, 55 ans
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Temoignage 3 -->
+                    <div class="item-3 px-3">
+                        <div class="box has-text-centered py-6 px-5 back-is-dark" style="background-color: #e4ebe2; border-radius: 16px; box-shadow: none;">
+                            <figure class="image is-64x64 mx-auto mb-4">
+            <img src="assets/bulle-icone.jpg" alt="Icone temoignage">
+        </figure>
+                            <p class="is-size-5 has-text-dark mb-5" style="line-height: 1.6;">
+                                “N'ayant ni enfants ni famille proche, j'ai trouvé un véritable soutien... C'est une présence de confiance sur laquelle je peux m'appuyer au quotidien.”
+                            </p>
+                            <p class="is-size-6 has-text-success has-text-weight-medium">
+                                Honorine, 82 ans
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Temoignage 4 -->
+                    <div class="item-4 px-3">
+                        <div class="box has-text-centered py-6 px-5" style="background-color: #e4ebe2; border-radius: 16px; box-shadow: none;">
+                            <figure class="image is-64x64 mx-auto mb-4">
+            <img src="assets/bulle-icone.jpg" alt="Icone temoignage">
+        </figure>
+                            <p class="is-size-5 has-text-dark mb-5" style="line-height: 1.6;">
+                                “Alexandra nous a aidés à rédiger un mandat de protection future entièrement adapté... Aujourd'hui, nous sommes rassurés : tout a été pensé pour que nos volontés soient respectées.”
+                            </p>
+                            <p class="is-size-6 has-text-success has-text-weight-medium">
+                                Jean-Paul et Martine
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Fleche de navigation vers la section suivante -->
+        <div class="has-text-centered mt-5">
+            <a href="#contact" class="scroll-down-arrow has-text-dark">
+                <i class="fas fa-chevron-down fa-2x"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- Fin de la section Histoires Partagees -->
+    
+<!-- <section id="histoire-contenu" class="hero is-fullheight is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div id="carousel-demo" class=" carousel">
+                <div class="item-1">
+                    <div class="box has-text-centered p-6 mx-2 carourou">
+                        <p class="is-size-5 mb-5">"Après mon burn-out, j'avais tout laissé tomber... Grâce à l'accompagnement patient et bienveillant d'Alexandra Santerre, j'ai pu remettre ma situation fiscale à plat, retrouver ma sérénité… et recréer une société."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success"> Fabien, 49 ans</span></strong></p>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="box has-text-centered p-6 mx-2 carourou">
+                        <p class="is-size-5 mb-5 ">"Grâce à l'écoute et à l'accompagnement d'Alexandra, j'ai appris à comprendre mon patrimoine, à ajuster mon train de vie et à envisager l'avenir sereinement."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success"> Sylvie, 55 ans</span></strong></p>
+                    </div>
+                </div>
+                <div class="item-3">
+                    <div class="box has-text-centered p-6 mx-2 carourou">
+                        <p class="is-size-5 mb-5">"N'ayant ni enfants ni famille proche, j'ai trouvé un véritable soutien... C'est une présence de confiance sur laquelle je peux m'appuyer au quotidien."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success"> Honorine, 82 ans</span></strong></p>
+                    </div>
+                </div>
+                <div class="item-4">
+                    <div class="box has-text-centered p-6 mx-2 carourou">
+                        <p class="is-size-5 mb-5">"Alexandra nous a aidés à rédiger un mandat de protection future entièrement adapté... Aujourd'hui, nous sommes rassurés : tout a été pensé pour que nos volontés soient respectées."</p>
+                        <p class="subtitle is-6 has-text-success"><strong><span class="has-text-success"> Jean-Paul et Martine</span></strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="hero-foot">
+            <div class="container has-text-centered mb-6">
+                <a href="#contact" class="scroll-down-arrow has-text-success"><i class="fas fa-chevron-down fa-4x"></i></a>
+            </div>
+        </div>
+</section> -->
+
+
+<section id="contact" class="hero is-fullheight back-is-success">
+    <div class="hero-body">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-1">Nous contacter</h2>
+            </div>
+
+            <div class="columns is-centered">
+                <div class="column is-4">
+                    <div class="contact-card-custom">
+                        <img src="assets/AlexandraSanterre.jpeg" alt="Alexandra Santerre" class="profile-photo-small">
+                        <h3 class="title is-4">Alexandra Santerre</h3>
+                        <p class="subtitle is-6 has-text-grey">Conseillère en Gestion de Patrimoine</p>
+                        <div class="content">
+                            
+                            <p><a href="https://www.linkedin.com/in/alexandrasanterre/  " class="has-text-success"><i class="fab fa-linkedin mr-2"></i>linkedin</a></p>
+                            <p><a href="tel:+33664319515" class="has-text-black"><i class="fas fa-phone mr-2"></i>06 11 51 63 84</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="contact-card-custom">
+                        <img src="assets/logo_ipap.png" alt="Consultante Ipapt" class="profile-photo-small">
+                        <h3 class="title is-4">IPAP consultante</h3>
+                        <h3 class="subtitle is-6 has-text-grey">Cabinet d'accompagnement Patrimonial</h3>
+                        <div class="content">
+                            <p><br></p>
+                            <p><a href="https://www.linkedin.com/company/intuitu-personae-accompagnement-patrimonial/posts/" class="has-text-success"><i class="fab fa-linkedin mr-2"></i>linkedin IPAP</a></p>
+                            <p><a href="consultante@ip-ap.fr" class="has-text-dark"><i class="fas fa-envelope mr-2"></i>consultante@ip-ap.fr</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer has-background-white">
+    <div class="container">
+        <div class="columns has-text-centered">
+            <div class="column">
+                <a href="#accueil-titre" class="has-text-success has-text-weight-bold">Accueil</a>
+            </div>
+            <div class="column">
+                <a href="#contact" class="has-text-success">Nous contacter</a>
+            </div>
+            <div class="column">
+                <a href="mentionslegales/mentionsleg.html" class="has-text-grey">Mentions légales</a>
+            </div>
+            <div class="column">
+                <a href="politiquedutilisation/politiquedutilisation.html" class="has-text-success">Politique de confidentialité</a>
+            </div>
+            <div class="column has-text-grey-light">
+                © 2025 IPAP - Tous droits réservés
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
