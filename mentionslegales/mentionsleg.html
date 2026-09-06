@@ -1,149 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <meta charset="UTF-8">
-    <title>Ip-ap</title>
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/mentionsleg.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentions Légales - IPAP</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mentions Légales - IPAP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          display: ['Poppins', 'ui-sans-serif', 'system-ui'],
+        },
+        colors: {
+          brand: {
+            50: '#f2f6ef', 100: '#e3ecdc', 200: '#bfcfb0', 300: '#a3c299',
+            400: '#66ac6f', 500: '#489C54', 600: '#3d8944', 700: '#316d37',
+            800: '#294f2c', 900: '#213e24',
+          },
+        },
+        boxShadow: { soft: '0 10px 30px -10px rgba(41, 79, 44, 0.25)' },
+      },
+    },
+  };
+</script>
+<link rel="stylesheet" href="../index.css">
 </head>
-<body>
+<body class="font-sans text-neutral-800 antialiased bg-white">
 
-
-<!-- Content -->
-<div class="legal-container">
-    <div class="legal-header">
-        <h1 class="legal-title">Mentions Légales</h1>
-        <p class="legal-subtitle">Informations légales et réglementaires</p>
-    </div>
-
-    <a href="../index.html" class="back-link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M19 12H5M12 19l-7-7 7-7"/>
-        </svg>
+<header class="bg-white/95 backdrop-blur shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="../index.html" class="flex items-center shrink-0">
+        <img src="../assets/Title.png" alt="IPAP - Intuitu Personae Accompagnement Patrimonial" class="h-9 md:h-11 w-auto">
+      </a>
+      <a href="../index.html" class="inline-flex items-center gap-2 rounded-full border border-neutral-200 px-4 py-2 text-sm font-medium text-neutral-700 hover:border-brand-300 hover:text-brand-600 hover:bg-brand-50 transition-colors">
+        <i class="fa-solid fa-arrow-left text-xs"></i>
         Retour à l'accueil
-    </a>
+      </a>
+    </div>
+  </nav>
+</header>
 
-    <!-- Section 1: Éditeur du site -->
-    <div class="legal-section">
-        <h2 class="section-title">1. Éditeur du site</h2>
-        
-        <div class="info-box">
-            <p><strong>Raison sociale :</strong> IPAP</p>
-            <p><strong>Forme juridique :</strong> SAS</p>
-            <p><strong>Capital social :</strong> 5 000 euros</p>
-            <p><strong>Siège social :</strong> 36 rue St André - 44210 PORNIC</p>
-            <p><strong>RCS :</strong> St-Nazaire sous le n°942 773 482</p>
-            <p><strong>Code NAF :</strong> 7022ZB</p>
-            <p><strong>N° TVA intracommunautaire :</strong> FR 84942773482</p>
-        </div>
+<section class="relative flex flex-col items-center justify-center text-center min-h-[35vh] px-6 py-14 bg-brand-200">
+  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-white shadow-soft mb-6">
+    <i class="fa-solid fa-scale-balanced text-2xl text-brand-600"></i>
+  </div>
+  <h1 class="font-display text-3xl md:text-4xl font-bold text-neutral-900">Mentions Légales</h1>
+  <p class="mt-3 text-neutral-700">Informations légales et réglementaires</p>
+</section>
 
-        <h3>Directeurs de la publication</h3>
-        <p>Alexandra Santerre et Nathalie Mouillet</p>
+<main class="max-w-3xl mx-auto px-6 py-16 space-y-12">
 
-        <h3>Contact</h3>
-        <p>
-            <strong>Email :</strong> contact@ipap.fr<br>
-            <strong>Téléphone :</strong> 06 11 51 63 84 ou 06 12 34 56 78
-        </p>
+  <section>
+    <h2 class="font-display text-xl md:text-2xl font-bold text-brand-600 mb-4">1. Éditeur du site</h2>
+    <div class="rounded-2xl bg-neutral-50 border border-neutral-200 p-6 space-y-2 text-sm md:text-base">
+      <p><strong class="text-neutral-900">Raison sociale :</strong> IPAP</p>
+      <p><strong class="text-neutral-900">Forme juridique :</strong> SAS</p>
+      <p><strong class="text-neutral-900">Capital social :</strong> 5 000 euros</p>
+      <p><strong class="text-neutral-900">Siège social :</strong> 36 rue St André - 44210 PORNIC</p>
+      <p><strong class="text-neutral-900">RCS :</strong> St-Nazaire sous le n°942 773 482</p>
+      <p><strong class="text-neutral-900">Code NAF :</strong> 7022ZB</p>
+      <p><strong class="text-neutral-900">N° TVA intracommunautaire :</strong> FR 84942773482</p>
     </div>
 
-    <!-- Section 2: Activité professionnelle -->
-    <div class="legal-section">
-        <h2 class="section-title">2. Activité professionnelle réglementée</h2>
-        
-        <h3>Conseil en Gestion de Patrimoine</h3>
-        <p>IPAP exerce une activité de conseil en gestion de patrimoine et est soumise aux règles déontologiques de la profession.</p>
+    <h3 class="font-semibold text-neutral-900 mt-6 mb-1">Directeurs de la publication</h3>
+    <p class="text-neutral-600">Alexandra Santerre et Nathalie Mouillet</p>
 
-        <h3>Courtage en assurance</h3>
-        <div class="info-box">
-            <p><strong>Statut :</strong> Courtier d'assurance</p>
-            <p><strong>Immatriculation ORIAS :</strong> N° 25005827</p>
-            <p><strong>Registre :</strong> Registre unique des intermédiaires en assurance, banque et finance</p>
-            <p><strong>Vérification :</strong> <a href="https://www.orias.fr" target="_blank" style="color: var(--green);">www.orias.fr</a></p>
-        </div>
+    <h3 class="font-semibold text-neutral-900 mt-6 mb-1">Contact</h3>
+    <p class="text-neutral-600">
+      <strong class="text-neutral-900">Email :</strong> contact@ipap.fr<br>
+      <strong class="text-neutral-900">Téléphone :</strong> 06 11 51 63 84 ou 06 12 34 56 78
+    </p>
+  </section>
 
-        <h3>Garanties professionnelles</h3>
-        <p><strong>Responsabilité Civile Professionnelle :</strong> N° 118.263.166</p>
-        <p><strong>Garantie financière :</strong> N° 118.263.166</p>
+  <section>
+    <h2 class="font-display text-xl md:text-2xl font-bold text-brand-600 mb-4">2. Activité professionnelle réglementée</h2>
 
-        <h3>Adhésion professionnelle</h3>
-        <p>IPAP est adhérente de la Chambre Nationale des Conseils en Gestion de Patrimoine (CNCGP) et soumise aux exigences de l'Autorité des Marchés Financiers (AMF).</p>
+    <h3 class="font-semibold text-neutral-900 mb-1">Conseil en Gestion de Patrimoine</h3>
+    <p class="text-neutral-600 mb-4">IPAP exerce une activité de conseil en gestion de patrimoine et est soumise aux règles déontologiques de la profession.</p>
+
+    <h3 class="font-semibold text-neutral-900 mb-1">Courtage en assurance</h3>
+    <div class="rounded-2xl bg-neutral-50 border border-neutral-200 p-6 space-y-2 text-sm md:text-base mb-4">
+      <p><strong class="text-neutral-900">Statut :</strong> Courtier d'assurance</p>
+      <p><strong class="text-neutral-900">Immatriculation ORIAS :</strong> N° 25005827</p>
+      <p><strong class="text-neutral-900">Registre :</strong> Registre unique des intermédiaires en assurance, banque et finance</p>
+      <p><strong class="text-neutral-900">Vérification :</strong> <a href="https://www.orias.fr" target="_blank" rel="noopener" class="text-brand-600 hover:underline">www.orias.fr</a></p>
     </div>
 
-   
+    <h3 class="font-semibold text-neutral-900 mb-1">Garanties professionnelles</h3>
+    <p class="text-neutral-600 mb-1"><strong class="text-neutral-900">Responsabilité Civile Professionnelle :</strong> N° 118.263.166</p>
+    <p class="text-neutral-600 mb-4"><strong class="text-neutral-900">Garantie financière :</strong> N° 118.263.166</p>
 
-    <!-- Section 3: Propriété intellectuelle -->
-    <div class="legal-section">
-        <h2 class="section-title">3. Propriété intellectuelle</h2>
-        
-        <p>L'ensemble des éléments composant ce site (textes, images, graphismes, logo, icônes, sons, logiciels, etc.) sont la propriété exclusive d'IPAP SAS, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
-        
-        <p>Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable d'IPAP SAS.</p>
-        
-        <p>Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p>
+    <h3 class="font-semibold text-neutral-900 mb-1">Adhésion professionnelle</h3>
+    <p class="text-neutral-600">IPAP est adhérente de la Chambre Nationale des Conseils en Gestion de Patrimoine (CNCGP) et soumise aux exigences de l'Autorité des Marchés Financiers (AMF).</p>
+  </section>
+
+  <section>
+    <h2 class="font-display text-xl md:text-2xl font-bold text-brand-600 mb-4">3. Propriété intellectuelle</h2>
+    <p class="text-neutral-600 mb-4">L'ensemble des éléments composant ce site (textes, images, graphismes, logo, icônes, sons, logiciels, etc.) sont la propriété exclusive d'IPAP SAS, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
+    <p class="text-neutral-600 mb-4">Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable d'IPAP SAS.</p>
+    <p class="text-neutral-600">Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p>
+  </section>
+
+  <section>
+    <h2 class="font-display text-xl md:text-2xl font-bold text-brand-600 mb-4">4. Protection des données personnelles</h2>
+
+    <h3 class="font-semibold text-neutral-900 mb-1">Responsable du traitement</h3>
+    <p class="text-neutral-600 mb-4">IPAP SAS est responsable du traitement des données personnelles collectées sur ce site.</p>
+
+    <h3 class="font-semibold text-neutral-900 mb-1">Vos droits</h3>
+    <p class="text-neutral-600 mb-2">Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants :</p>
+    <ul class="space-y-1 text-neutral-600 mb-4">
+      <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Droit d'accès à vos données personnelles</span></li>
+      <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Droit de rectification de vos données</span></li>
+      <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Droit à l'effacement (droit à l'oubli)</span></li>
+      <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Droit à la limitation du traitement</span></li>
+      <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Droit à la portabilité des données</span></li>
+      <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Droit d'opposition au traitement</span></li>
+    </ul>
+    <p class="text-neutral-600">Pour exercer ces droits, vous pouvez nous contacter à l'adresse : <strong class="text-neutral-900">contact@ipap.fr</strong></p>
+  </section>
+
+  <section>
+    <h2 class="font-display text-xl md:text-2xl font-bold text-brand-600 mb-4">5. Limitation de responsabilité</h2>
+    <p class="text-neutral-600 mb-4">IPAP SAS s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, IPAP ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.</p>
+    <p class="text-neutral-600 mb-4">En conséquence, IPAP décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site.</p>
+    <p class="text-neutral-600 mb-4">IPAP ne pourra être tenue responsable des dommages directs ou indirects résultant de l'utilisation de ce site ou de sites qui lui sont liés.</p>
+
+    <h3 class="font-semibold text-neutral-900 mb-1">Liens hypertextes</h3>
+    <p class="text-neutral-600">Le site peut contenir des liens vers d'autres sites internet. IPAP n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.</p>
+  </section>
+
+  <section>
+    <h2 class="font-display text-xl md:text-2xl font-bold text-brand-600 mb-4">6. Droit applicable et juridiction</h2>
+    <p class="text-neutral-600 mb-4">Les présentes mentions légales sont régies par le droit français.</p>
+    <p class="text-neutral-600">En cas de litige et à défaut d'accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur.</p>
+  </section>
+
+</main>
+
+<footer class="bg-neutral-50 border-t border-neutral-100">
+  <div class="max-w-6xl mx-auto px-6 py-10">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center text-sm">
+      <a href="../index.html" class="font-semibold text-brand-600 hover:text-brand-700 transition-colors">Accueil</a>
+      <a href="../index.html#contact" class="text-brand-600 hover:text-brand-700 transition-colors">Nous contacter</a>
+      <a href="mentionsleg.html" class="text-neutral-900 font-semibold">Mentions légales</a>
+      <a href="../politiquedutilisation/politiquedutilisation.html" class="text-brand-600 hover:text-brand-700 transition-colors">Politique de confidentialité</a>
     </div>
-
-    <!-- Section 4: Protection des données -->
-    <div class="legal-section">
-        <h2 class="section-title">4. Protection des données personnelles</h2>
-        
-        <h3>Responsable du traitement</h3>
-        <p>IPAP SAS est responsable du traitement des données personnelles collectées sur ce site.</p>
-
-
-        <h3>Vos droits</h3>
-        <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants :</p>
-        <ul>
-            <li>Droit d'accès à vos données personnelles</li>
-            <li>Droit de rectification de vos données</li>
-            <li>Droit à l'effacement (droit à l'oubli)</li>
-            <li>Droit à la limitation du traitement</li>
-            <li>Droit à la portabilité des données</li>
-            <li>Droit d'opposition au traitement</li>
-        </ul>
-
-        <p>Pour exercer ces droits, vous pouvez nous contacter à l'adresse : <strong>contact@ipap.fr</strong></p>
-
-    </div>
-
-    <!-- Section 5: Responsabilité -->
-    <div class="legal-section">
-        <h2 class="section-title">5. Limitation de responsabilité</h2>
-        
-        <p>IPAP SAS s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, IPAP ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.</p>
-        
-        <p>En conséquence, IPAP décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site.</p>
-        
-        <p>IPAP ne pourra être tenue responsable des dommages directs ou indirects résultant de l'utilisation de ce site ou de sites qui lui sont liés.</p>
-
-        <h3>Liens hypertextes</h3>
-        <p>Le site peut contenir des liens vers d'autres sites internet. IPAP n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.</p>
-    </div>
-
-    <!-- Section 6: Droit applicable -->
-    <div class="legal-section">
-        <h2 class="section-title">6. Droit applicable et juridiction</h2>
-        
-        <p>Les présentes mentions légales sont régies par le droit français.</p>
-        
-        <p>En cas de litige et à défaut d'accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur.</p>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer class="footer-navbar">
-    <div class="columns has-text-centered" style="margin-top: 20px;">
-        <div class="column"><a href="../index.html" style="color: var(--green);">Accueil</a></div>
-        <div class="column"><a href="../contact/nousContacter.html" style="color: var(--green);">Nous contacter</a></div>
-        <div class="column"><a href="mentions-legales.html" style="color: var(--dark-green); font-weight: 600;">Mentions légales</a></div>
-        <div class="column"><a href="../politiquedutilisation/politiquedutilisation.html" style="color: var(--green);">Politique de confidentialité</a></div>
-        <div class="column" style="color: #666;">© 2025 IPAP - Tous droits réservés</div>
-    </div>
+    <p class="text-center text-neutral-400 text-sm mt-6">© 2025 IPAP - Tous droits réservés</p>
+  </div>
 </footer>
+
 </body>
 </html>
