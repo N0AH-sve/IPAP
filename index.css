@@ -14,7 +14,7 @@ html {
 
 /* Offset d'ancrage pour ne pas passer sous la nav fixe */
 [id] {
-  scroll-margin-top: 5.5rem;
+  scroll-margin-top: 4.25rem;
 }
 
 body {
