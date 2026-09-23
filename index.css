@@ -30,6 +30,15 @@ body {
   background-size: cover;
 }
 
+/* ===== Héro notre approche ===== */
+#methode-globale-titre {
+  background-image: linear-gradient(rgba(20, 24, 20, 0.45), rgba(20, 24, 20, 0.45)),
+                     url('assets/chaine.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* ===== Héro missions ===== */
 #missions-titre {
   background-image: linear-gradient(rgba(20, 24, 20, 0.45), rgba(20, 24, 20, 0.45)),
