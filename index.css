@@ -12,9 +12,76 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hauteur de la nav fixe : sert d'offset d'ancrage et de base
+   pour la hauteur des sections. */
+:root {
+  --header-h: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 4rem;
+  }
+}
+
 /* Offset d'ancrage pour ne pas passer sous la nav fixe */
 [id] {
-  scroll-margin-top: 4.25rem;
+  scroll-margin-top: var(--header-h);
+}
+
+/* ===============================================
+   Rythme vertical : 1 section = 1 écran
+   =============================================== */
+
+/* Échelle typographique fluide. Toutes les tailles Tailwind étant
+   exprimées en rem, réduire la racine compresse d'un seul geste
+   textes, espacements, rayons et hauteurs : plus l'écran est court,
+   plus les informations remontent. 16px au-delà de 900px de haut,
+   12px en dessous de ~640px. */
+html.fit-page {
+  font-size: clamp(12px, calc(2.36px + 1.515vh), 16px);
+}
+
+/* Au-delà de 1200px de large, la hauteur en trop peut être rendue au
+   contenu : on relève le plafond pour qu'un grand écran ne se retrouve
+   pas avec des sections à moitié vides. En dessous, l'agrandir serait
+   contre-productif — les sections denses déborderaient et seraient
+   réduites, donc moins lisibles. */
+@media (min-width: 1200px) {
+  html.fit-page {
+    font-size: clamp(12px, calc(2.36px + 1.515vh), 20px);
+  }
+}
+
+/* Toutes les sections partagent exactement la même hauteur : un écran
+   utile (hauteur de fenêtre moins la nav fixe). */
+.vp-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-h));
+  min-height: calc(100svh - var(--header-h));
+  padding-block: clamp(0.5rem, 2.2vh, 2.5rem);
+}
+
+/* Enveloppe créée par le script : c'est elle qui est mise à l'échelle
+   lorsque le contenu naturel dépasse la hauteur disponible. */
+.vp-inner {
+  /* flex: 0 0 auto — l'enveloppe doit garder sa hauteur naturelle pour que
+     le script la mesure correctement (sinon flexbox la comprime). */
+  flex: 0 0 auto;
+  width: 100%;
+  transform-origin: center center;
+}
+
+/* Une fois le script actif, la hauteur est verrouillée : le contenu
+   est garanti visible en entier, sans débordement. */
+.fit-ready .vp-section {
+  height: calc(100vh - var(--header-h));
+  height: calc(100svh - var(--header-h));
+  overflow: hidden;
 }
 
 body {

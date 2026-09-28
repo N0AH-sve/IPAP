@@ -178,4 +178,112 @@ document.addEventListener('DOMContentLoaded', () => {
     render();
     startAutoplay();
   }
+
+  /* ============ Ajustement : chaque section tient dans un écran ============ */
+  const vpSections = Array.from(document.querySelectorAll('.vp-section'));
+
+  if (vpSections.length) {
+    // Une enveloppe par section : seul le contenu dans le flux est mis à
+    // l'échelle (les flèches en position absolue restent à leur place).
+    vpSections.forEach((section) => {
+      const flow = Array.from(section.children).filter(
+        (el) => getComputedStyle(el).position !== 'absolute'
+      );
+      if (!flow.length) return;
+      const inner = document.createElement('div');
+      inner.className = 'vp-inner';
+      section.insertBefore(inner, flow[0]);
+      flow.forEach((el) => inner.appendChild(el));
+    });
+
+    document.body.classList.add('fit-ready');
+
+    const fitSection = (section) => {
+      const inner = section.querySelector(':scope > .vp-inner');
+      if (!inner) return;
+
+      const cs = getComputedStyle(section);
+      // 1px de marge : les hauteurs mesurées sont arrondies au pixel.
+      const avail = section.clientHeight
+        - parseFloat(cs.paddingTop)
+        - parseFloat(cs.paddingBottom)
+        - 1;
+      const baseWidth = section.clientWidth
+        - parseFloat(cs.paddingLeft)
+        - parseFloat(cs.paddingRight);
+      if (avail <= 0 || baseWidth <= 0) return;
+
+      const reset = () => {
+        inner.style.width = '';
+        inner.style.transform = 'none';
+        section.removeAttribute('data-fit-scale');
+      };
+
+      // Hauteur rendue pour une échelle donnée. On élargit l'enveloppe de
+      // 1/échelle avant de la réduire : la largeur visible reste celle de
+      // la section, le texte se réenroule, et l'échelle nécessaire reste
+      // la plus généreuse possible.
+      const renderedHeight = (scale) => {
+        inner.style.width = (baseWidth / scale) + 'px';
+        return inner.scrollHeight * scale;
+      };
+
+      inner.style.transform = 'none';
+
+      if (renderedHeight(1) <= avail) {
+        reset();
+        return;
+      }
+
+      // La hauteur rendue croît avec l'échelle : dichotomie sur la plus
+      // grande échelle qui tient encore.
+      let lo = 0.2;
+      let hi = 1;
+      for (let i = 0; i < 7; i += 1) {
+        const mid = (lo + hi) / 2;
+        if (renderedHeight(mid) <= avail) lo = mid;
+        else hi = mid;
+      }
+
+      // Passe de sécurité : à largeur figée, réduire l'échelle réduit
+      // strictement la hauteur rendue. Le résultat tient donc toujours.
+      inner.style.width = (baseWidth / lo) + 'px';
+      const natural = inner.scrollHeight;
+      const scale = natural ? Math.min(lo, avail / natural) : lo;
+
+      inner.style.transform = 'scale(' + scale + ')';
+      section.setAttribute('data-fit-scale', scale.toFixed(3));
+    };
+
+    const fitAll = () => vpSections.forEach(fitSection);
+
+    // Débounce par timer plutôt que requestAnimationFrame : les frames ne
+    // sont pas planifiées quand l'onglet est en arrière-plan.
+    let fitTimer = null;
+    const scheduleFit = () => {
+      if (fitTimer) clearTimeout(fitTimer);
+      fitTimer = setTimeout(() => {
+        fitTimer = null;
+        fitAll();
+      }, 60);
+    };
+
+    fitAll();
+
+    // Les images en lazy-load et les polices web changent la hauteur
+    // naturelle après le premier calcul : on remesure à chaque arrivée.
+    document.querySelectorAll('.vp-section img').forEach((img) => {
+      if (!img.complete) {
+        img.addEventListener('load', scheduleFit, { once: true });
+        img.addEventListener('error', scheduleFit, { once: true });
+      }
+    });
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(scheduleFit);
+    }
+    window.addEventListener('load', scheduleFit);
+    window.addEventListener('resize', scheduleFit);
+    window.addEventListener('orientationchange', scheduleFit);
+  }
+
 });

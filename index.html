@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="fit-page">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,7 @@
     theme: {
       extend: {
         screens: {
-          short: { raw: '(max-height: 800px)' },
+          short: { raw: '(min-width: 900px) and (max-height: 880px)' },
         },
         fontFamily: {
           sans: ['Inter', 'ui-sans-serif', 'system-ui'],
@@ -98,8 +98,8 @@
 <main class="pt-14 lg:pt-16">
 
   <!-- ================= HERO ACCUEIL ================= -->
-  <section id="accueil-titre" class="relative min-h-[calc(100vh-3.5rem)] lg:min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center text-center px-6 py-12">
-    <div class="relative z-10 flex flex-col items-center max-w-4xl">
+  <section id="accueil-titre" class="vp-section px-6 text-center">
+    <div class="relative z-10 flex flex-col items-center max-w-4xl mx-auto">
       <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold leading-tight text-white drop-shadow-lg">
         <span class="text-brand-200">Anticiper</span> aujourd'hui pour
         <br>
@@ -118,43 +118,43 @@
   </section>
 
   <!-- ================= PHILOSOPHIE ================= -->
-  <section id="accueil-contenu" class="bg-white py-12 lg:py-16 short:py-6">
+  <section id="accueil-contenu" class="vp-section bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-12 short:gap-6 items-center">
-        <figure class="reveal rounded-2xl overflow-hidden shadow-soft short:max-h-[280px]">
-          <img src="assets/alexandra.png" alt="IPAP - Anticiper" class="w-full h-full object-cover short:h-[280px]" loading="lazy">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+        <figure class="reveal rounded-2xl overflow-hidden shadow-soft h-[24vh] md:h-[48vh]">
+          <img src="assets/alexandra.png" alt="IPAP - Anticiper" class="w-full h-full object-cover" loading="lazy">
         </figure>
 
         <div class="reveal">
-          <div class="mb-10 short:mb-4">
-            <h2 class="font-display text-2xl md:text-3xl font-bold text-neutral-900">
+          <div class="mb-10">
+            <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">
               Vivre en <span class="text-brand-600">harmonie</span> avec vos <span class="text-brand-600">choix</span>
             </h2>
-            <p class="mt-3 text-neutral-600 leading-relaxed text-left text-justify">
+            <p class="mt-3 text-neutral-600 leading-relaxed text-left md:text-justify">
               Anticiper avec expertise, protéger avec sérénité, pour vivre en parfaite harmonie avec vos choix.
             </p>
           </div>
           <div>
-            <h2 class="font-display text-2xl md:text-3xl font-bold text-neutral-900">
+            <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">
               Préparez <span class="text-brand-600">votre avenir</span>
             </h2>
-            <p class="mt-3 text-neutral-600 leading-relaxed text-left text-justify">
+            <p class="mt-3 text-neutral-600 leading-relaxed text-left md:text-justify">
               Dans le respect de la déontologie et avec une approche pédagogique, nous travaillons en étroite collaboration avec vos conseils habituels : notaires, experts-comptables, avocats, mandataires judiciaires à la protection des majeurs et professionnels du conseil financier.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-center mt-10 short:mt-4">
-      <a href="#methode-globale-titre" aria-label="Défiler vers l'approche" class="inline-flex items-center justify-center w-11 h-11 short:w-8 short:h-8 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
+    <div class="text-center mt-4 sm:mt-8 md:mt-10">
+      <a href="#methode-globale-titre" aria-label="Défiler vers l'approche" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
         <i class="fa-solid fa-chevron-down text-xl"></i>
       </a>
     </div>
   </section>
 
   <!-- ================= TITRE : NOTRE APPROCHE ================= -->
-  <section id="methode-globale-titre" class="relative flex flex-col items-center justify-center px-6 py-12 min-h-[calc(100vh-3.5rem)] lg:min-h-[calc(100vh-4rem)]">
-    <div class="relative z-10 max-w-2xl w-full">
+  <section id="methode-globale-titre" class="vp-section px-6">
+    <div class="relative z-10 max-w-2xl w-full mx-auto">
       <div class="flex items-center gap-6">
         <div class="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full bg-white/15 ring-1 ring-white/40 backdrop-blur-sm shrink-0">
           <i class="fa-solid fa-diagram-project text-4xl sm:text-5xl lg:text-6xl text-white"></i>
@@ -172,50 +172,50 @@
   </section>
 
   <!-- ================= CONTENU : METHODE GLOBALE ================= -->
-  <section id="methode-globale" class="bg-neutral-50 py-12 lg:py-16 short:py-6">
+  <section id="methode-globale" class="vp-section bg-neutral-50">
     <div class="max-w-5xl mx-auto px-6">
-      <div class="text-center mb-10 short:mb-4 reveal">
-        <h3 class="font-display text-2xl md:text-3xl font-bold text-neutral-900">Méthode globale</h3>
-        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-4 short:my-2"></div>
-        <p class="text-neutral-600 max-w-2xl mx-auto leading-relaxed text-justify">
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 reveal">
+        <h3 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">Méthode globale</h3>
+        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-2 sm:my-4"></div>
+        <p class="text-neutral-600 max-w-2xl mx-auto leading-relaxed text-left md:text-justify">
           Nous veillons à apporter de la <span class="text-brand-600 font-semibold">sérénité</span> en prodiguant des conseils juridiques et financiers adaptés aux familles, dirigeants et aidants familiaux que nous accompagnons. Nous accordons une importance fondamentale aux <span class="text-brand-600 font-semibold">besoins spécifiques</span> de chacun.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6 short:gap-3 items-center reveal">
-        <div class="flex flex-col gap-6 short:gap-3 order-2 md:order-1">
-          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-6 short:p-3 short:text-sm shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 items-center reveal">
+        <div class="contents md:flex md:flex-col md:gap-6 md:order-1">
+          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-3 sm:p-4 md:p-6 shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
             Assistance dans vos formalités d'urgence et démarches juridiques
           </div>
-          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-6 short:p-3 short:text-sm shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
+          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-3 sm:p-4 md:p-6 shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
             Suivi et ajustement continus de vos orientations
           </div>
         </div>
 
-        <div class="flex flex-col items-center gap-6 short:gap-3 order-1 md:order-2">
-          <div class="w-full rounded-2xl bg-brand-100 text-neutral-800 text-center p-6 short:p-3 short:text-sm shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
+        <div class="contents md:flex md:flex-col md:items-center md:gap-6 md:order-2">
+          <div class="md:w-full rounded-2xl bg-brand-100 text-neutral-800 text-center p-3 sm:p-4 md:p-6 shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
             Repérage des points de fragilité face à un état de vulnérabilité
           </div>
-          <div class="flex items-center justify-center text-center rounded-full bg-brand-600 text-white font-bold w-40 h-40 lg:w-44 lg:h-44 short:w-24 short:h-24 short:text-xs shadow-soft shrink-0">
+          <div class="order-first md:order-none col-span-2 md:col-span-1 justify-self-center flex items-center justify-center text-center rounded-full bg-brand-600 text-white font-bold w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 shadow-soft shrink-0">
             Étude transversale de votre situation
           </div>
-          <div class="w-full rounded-2xl bg-brand-100 text-neutral-800 text-center p-6 short:p-3 short:text-sm shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
+          <div class="md:w-full rounded-2xl bg-brand-100 text-neutral-800 text-center p-3 sm:p-4 md:p-6 shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
             Accompagnement dans la mise en œuvre des solutions
           </div>
         </div>
 
-        <div class="flex flex-col gap-6 short:gap-3 order-3">
-          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-6 short:p-3 short:text-sm shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
+        <div class="contents md:flex md:flex-col md:gap-6 md:order-3">
+          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-3 sm:p-4 md:p-6 shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
             Harmonisation et simplification de votre gestion patrimoniale
           </div>
-          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-6 short:p-3 short:text-sm shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
+          <div class="rounded-2xl bg-brand-100 text-neutral-800 text-center p-3 sm:p-4 md:p-6 shadow-sm hover:shadow-soft hover:-translate-y-1 transition-all">
             Préconisations adaptées à votre situation et vos volontés
           </div>
         </div>
       </div>
 
-      <div class="text-center mt-10 short:mt-4">
-        <a href="#missions-titre" aria-label="Défiler vers les missions" class="inline-flex items-center justify-center w-11 h-11 short:w-8 short:h-8 rounded-full text-brand-600 hover:bg-brand-100 transition-colors">
+      <div class="text-center mt-4 sm:mt-8 md:mt-10">
+        <a href="#missions-titre" aria-label="Défiler vers les missions" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-100 transition-colors">
           <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
       </div>
@@ -223,8 +223,8 @@
   </section>
 
   <!-- ================= TITRE : MISSIONS ================= -->
-  <section id="missions-titre" class="relative flex flex-col items-center justify-center min-h-[calc(100vh-3.5rem)] lg:min-h-[calc(100vh-4rem)] px-6 py-12">
-    <div class="relative z-10 max-w-2xl">
+  <section id="missions-titre" class="vp-section px-6">
+    <div class="relative z-10 max-w-2xl mx-auto">
       <div class="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full bg-white/15 ring-1 ring-white/40 backdrop-blur-sm mb-6">
         <i class="fa-solid fa-bullseye text-4xl sm:text-5xl lg:text-6xl text-white"></i>
       </div>
@@ -240,23 +240,23 @@
   </section>
 
   <!-- ================= CONTENU : MISSIONS ================= -->
-  <section id="missions" class="bg-white py-12 lg:py-16 short:py-6">
+  <section id="missions" class="vp-section bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-10 short:mb-4 reveal">
-        <h2 class="font-display text-2xl md:text-3xl font-bold text-neutral-900">Nos missions</h2>
-        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-4 short:my-2"></div>
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 reveal">
+        <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">Nos missions</h2>
+        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-2 sm:my-4"></div>
         <p class="text-neutral-600">Un accompagnement global et sur-mesure à chaque étape de votre parcours</p>
       </div>
 
-      <div class="grid md:grid-cols-2 short:lg:grid-cols-4 gap-6 short:gap-3">
-        <div class="reveal group rounded-2xl border border-neutral-200 p-6 md:p-8 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
-          <div class="flex items-center gap-4 mb-4 short:mb-2">
-            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+      <div class="grid grid-cols-2 short:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+        <div class="reveal group rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-8 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+          <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mb-2 sm:mb-4 text-center sm:text-left">
+            <div class="flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
               <i class="fa-regular fa-user text-lg"></i>
             </div>
-            <h3 class="font-display text-xl font-semibold text-neutral-900">Conseil patrimonial</h3>
+            <h3 class="font-display text-base sm:text-lg md:text-xl font-semibold text-neutral-900">Conseil patrimonial</h3>
           </div>
-          <ul class="space-y-2 short:space-y-1 text-neutral-600 short:text-sm">
+          <ul class="space-y-1.5 sm:space-y-2 text-neutral-600">
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Audit patrimonial global & stratégie personnalisée</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Test de résilience patrimoniale pour dirigeants</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Stratégie d'anticipation et d'optimisation successorale</span></li>
@@ -264,14 +264,14 @@
           </ul>
         </div>
 
-        <div class="reveal group rounded-2xl border border-neutral-200 p-6 md:p-8 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
-          <div class="flex items-center gap-4 mb-4 short:mb-2">
-            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+        <div class="reveal group rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-8 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+          <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mb-2 sm:mb-4 text-center sm:text-left">
+            <div class="flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
               <i class="fa-regular fa-circle-check text-lg"></i>
             </div>
-            <h3 class="font-display text-xl font-semibold text-neutral-900">Anticipation & Protection</h3>
+            <h3 class="font-display text-base sm:text-lg md:text-xl font-semibold text-neutral-900">Anticipation & Protection</h3>
           </div>
-          <ul class="space-y-2 short:space-y-1 text-neutral-600 short:text-sm">
+          <ul class="space-y-1.5 sm:space-y-2 text-neutral-600">
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Accompagnement dédié aux situations de vulnérabilité</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Prévention et gestion globale des risques patrimoniaux</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Mise en place de solutions de protection sur-mesure</span></li>
@@ -279,14 +279,14 @@
           </ul>
         </div>
 
-        <div class="reveal group rounded-2xl border border-neutral-200 p-6 md:p-8 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
-          <div class="flex items-center gap-4 mb-4 short:mb-2">
-            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+        <div class="reveal group rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-8 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+          <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mb-2 sm:mb-4 text-center sm:text-left">
+            <div class="flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
               <i class="fa-solid fa-chart-line text-lg"></i>
             </div>
-            <h3 class="font-display text-xl font-semibold text-neutral-900">Stratégie d'investissement</h3>
+            <h3 class="font-display text-base sm:text-lg md:text-xl font-semibold text-neutral-900">Stratégie d'investissement</h3>
           </div>
-          <ul class="space-y-2 short:space-y-1 text-neutral-600 short:text-sm">
+          <ul class="space-y-1.5 sm:space-y-2 text-neutral-600">
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Structuration et optimisation du patrimoine personnel</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Gestion et pilotage de la trésorerie d'entreprise</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Sélection rigoureuse de solutions d'investissement</span></li>
@@ -294,14 +294,14 @@
           </ul>
         </div>
 
-        <div class="reveal group rounded-2xl border border-neutral-200 p-6 md:p-8 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
-          <div class="flex items-center gap-4 mb-4 short:mb-2">
-            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+        <div class="reveal group rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-8 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+          <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 mb-2 sm:mb-4 text-center sm:text-left">
+            <div class="flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
               <i class="fa-regular fa-handshake text-lg"></i>
             </div>
-            <h3 class="font-display text-xl font-semibold text-neutral-900">Services patrimoniaux</h3>
+            <h3 class="font-display text-base sm:text-lg md:text-xl font-semibold text-neutral-900">Services patrimoniaux</h3>
           </div>
-          <ul class="space-y-2 short:space-y-1 text-neutral-600 short:text-sm">
+          <ul class="space-y-1.5 sm:space-y-2 text-neutral-600">
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Intermédiation en assurance & opérations bancaires</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Conseil et accompagnement en transactions immobilières</span></li>
             <li class="flex gap-2"><i class="fa-solid fa-check text-brand-500 mt-1 text-sm"></i><span>Assistance fiscale, juridique et formalités</span></li>
@@ -310,8 +310,8 @@
         </div>
       </div>
 
-      <div class="text-center mt-10 short:mt-4">
-        <a href="#parcours-titre" aria-label="Défiler vers le parcours" class="inline-flex items-center justify-center w-11 h-11 short:w-8 short:h-8 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
+      <div class="text-center mt-4 sm:mt-8 md:mt-10">
+        <a href="#parcours-titre" aria-label="Défiler vers le parcours" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
           <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
       </div>
@@ -319,8 +319,8 @@
   </section>
 
   <!-- ================= TITRE : PARCOURS ================= -->
-  <section id="parcours-titre" class="relative flex flex-col items-center justify-center px-6 py-12 min-h-[calc(100vh-3.5rem)] lg:min-h-[calc(100vh-4rem)] bg-brand-200">
-    <div class="max-w-2xl w-full">
+  <section id="parcours-titre" class="vp-section px-6 bg-brand-200">
+    <div class="max-w-2xl w-full mx-auto">
       <div class="flex items-center gap-6">
         <div class="flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-white shadow-soft shrink-0">
           <i class="fa-solid fa-route text-5xl sm:text-6xl lg:text-7xl text-brand-600"></i>
@@ -337,50 +337,50 @@
   </section>
 
   <!-- ================= CONTENU : PARCOURS ================= -->
-  <section id="parcours-contenu" class="bg-neutral-50 py-12 lg:py-16 short:py-6">
+  <section id="parcours-contenu" class="vp-section bg-neutral-50">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-10 short:mb-4 reveal">
-        <h3 class="font-display text-xl md:text-2xl italic font-medium text-neutral-800 max-w-3xl mx-auto leading-relaxed short:text-base">
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 reveal">
+        <h3 class="font-display text-xl md:text-2xl italic font-medium text-neutral-800 max-w-3xl mx-auto leading-relaxed">
           <span class="text-brand-500 text-3xl align-top mr-1">&ldquo;</span>
           J'ai fondé IPAP pour accompagner les familles avec des solutions concrètes et humaines.
           <span class="text-brand-500 text-3xl align-top ml-1">&rdquo;</span>
         </h3>
-        <div class="w-10 h-1 bg-brand-600 rounded-full mx-auto my-4 short:my-2"></div>
+        <div class="w-10 h-1 bg-brand-600 rounded-full mx-auto my-2 sm:my-4"></div>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-12 short:gap-6 items-center reveal">
-        <figure class="rounded-2xl overflow-hidden shadow-soft short:max-h-[300px]">
-          <img src="assets/ALX2.png" alt="Alexandra Santerre" class="w-full h-full object-cover short:h-[300px]" loading="lazy">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center reveal">
+        <figure class="rounded-2xl overflow-hidden shadow-soft w-2/5 mx-auto h-[24vh] md:w-full md:max-w-[340px] md:h-[46vh]">
+          <img src="assets/alexandra-portrait.png" alt="Alexandra Santerre" class="w-full h-full object-cover object-top" loading="lazy">
         </figure>
 
-        <div class="space-y-6 short:space-y-3">
+        <div class="space-y-6">
           <p class="font-display font-bold text-neutral-900 text-lg">Alexandra Santerre</p>
           <div class="flex gap-4">
-            <img src="assets/chapeau.png" alt="" class="w-12 h-12 short:w-9 short:h-9 shrink-0" aria-hidden="true">
+            <img src="assets/chapeau.png" alt="" class="w-12 h-12 shrink-0" aria-hidden="true">
             <div>
-              <p class="text-neutral-700 leading-relaxed text-justify short:text-sm">
+              <p class="text-neutral-700 leading-relaxed text-left md:text-justify">
                 Diplômée de l'IAE et certifiée AUREP en Gestion de Patrimoine des Séniors,
                 <strong class="text-brand-600">j'accompagne particuliers et professionnels</strong>
                 dans la protection et la transmission de leur patrimoine, en anticipant les situations de vulnérabilité.
               </p>
-              <div class="w-8 h-0.5 bg-brand-300 rounded-full mt-4 short:mt-2"></div>
+              <div class="w-8 h-0.5 bg-brand-300 rounded-full mt-4"></div>
             </div>
           </div>
 
           <div class="flex gap-4">
-            <img src="assets/hands.png" alt="" class="w-12 h-12 short:w-9 short:h-9 shrink-0" aria-hidden="true">
+            <img src="assets/hands.png" alt="" class="w-12 h-12 shrink-0" aria-hidden="true">
             <div>
-              <p class="text-neutral-700 leading-relaxed text-justify short:text-sm">
+              <p class="text-neutral-700 leading-relaxed text-left md:text-justify">
                 Engagée auprès de <strong class="text-brand-600">France Tutelle</strong>, je sensibilise à ces enjeux et à leur anticipation.
               </p>
-              <div class="w-8 h-0.5 bg-brand-300 rounded-full mt-4 short:mt-2"></div>
+              <div class="w-8 h-0.5 bg-brand-300 rounded-full mt-4"></div>
             </div>
           </div>
 
           <div class="flex gap-4">
-            <img src="assets/home.png" alt="" class="w-12 h-12 short:w-9 short:h-9 shrink-0" aria-hidden="true">
+            <img src="assets/home.png" alt="" class="w-12 h-12 shrink-0" aria-hidden="true">
             <div>
-              <p class="text-neutral-700 leading-relaxed text-justify short:text-sm">
+              <p class="text-neutral-700 leading-relaxed text-left md:text-justify">
                 Forte de cette expérience, <strong class="text-brand-600">j'ai fondé IPAP &ndash; Intuitu Personae Accompagnement Patrimonial</strong>,
                 implanté dans l'Ouest, pour offrir un accompagnement humain, personnalisé et pluridisciplinaire.
               </p>
@@ -389,8 +389,8 @@
         </div>
       </div>
 
-      <div class="text-center mt-10 short:mt-4">
-        <a href="#enjeux-titre" aria-label="Défiler vers les enjeux" class="inline-flex items-center justify-center w-11 h-11 short:w-8 short:h-8 rounded-full text-brand-600 hover:bg-brand-100 transition-colors">
+      <div class="text-center mt-4 sm:mt-8 md:mt-10">
+        <a href="#enjeux-titre" aria-label="Défiler vers les enjeux" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-100 transition-colors">
           <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
       </div>
@@ -398,8 +398,8 @@
   </section>
 
   <!-- ================= TITRE : ENJEUX ================= -->
-  <section id="enjeux-titre" class="relative flex flex-col items-center justify-center px-6 py-12 min-h-[calc(100vh-3.5rem)] lg:min-h-[calc(100vh-4rem)] bg-brand-200">
-    <div class="max-w-2xl w-full">
+  <section id="enjeux-titre" class="vp-section px-6 bg-brand-200">
+    <div class="max-w-2xl w-full mx-auto">
       <div class="flex items-center gap-6">
         <div class="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full bg-white shadow-soft shrink-0">
           <i class="fa-solid fa-compass text-4xl sm:text-5xl lg:text-6xl text-brand-600"></i>
@@ -416,24 +416,24 @@
   </section>
 
   <!-- ================= CONTENU : ENJEUX ================= -->
-  <section id="enjeux-contenu" class="bg-white py-12 lg:py-16 short:py-6">
+  <section id="enjeux-contenu" class="vp-section bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-10 short:mb-4 reveal">
-        <h2 class="font-display text-2xl md:text-3xl font-bold text-neutral-900">Vos enjeux</h2>
-        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-4 short:my-2"></div>
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 reveal">
+        <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">Vos enjeux</h2>
+        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-2 sm:my-4"></div>
         <p class="text-neutral-600">Vous êtes-vous déjà demandé ?</p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 short:gap-3">
-        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-6 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+      <div class="grid grid-cols-2 short:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
+        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-6 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
           <div>
-            <div class="text-center mb-4 short:mb-2">
-              <h3 class="font-display text-lg font-semibold text-neutral-900 mb-3">Protéger</h3>
-              <div class="mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+            <div class="text-center mb-4">
+              <h3 class="font-display text-base md:text-lg font-semibold text-neutral-900 mb-1.5 md:mb-3">Protéger</h3>
+              <div class="mx-auto flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
                 <i class="fa-regular fa-user text-lg"></i>
               </div>
             </div>
-            <ul class="space-y-2 short:space-y-1 text-sm text-neutral-600">
+            <ul class="space-y-2 text-sm text-neutral-600">
               <li>Que faire si un proche perd ses capacités à prendre des décisions ?</li>
               <li>Comment préparer l'avenir d'un enfant en situation de handicap ?</li>
               <li>Comment protéger une personne vulnérable sans porter atteinte à sa liberté ?</li>
@@ -441,38 +441,38 @@
           </div>
           <div class="pt-2 mt-2 border-t border-neutral-100 flex items-start gap-2">
             <i class="fa-solid fa-hands-holding-child text-brand-500 mt-1 text-sm"></i>
-            <p class="text-xs text-brand-600 text-justify">Anticiper la vulnérabilité, organiser la protection juridique et coordonner les solutions.</p>
+            <p class="text-xs text-brand-600 text-left md:text-justify">Anticiper la vulnérabilité, organiser la protection juridique et coordonner les solutions.</p>
           </div>
         </div>
 
-        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-6 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-6 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
           <div>
-            <div class="text-center mb-4 short:mb-2">
-              <h3 class="font-display text-lg font-semibold text-neutral-900 mb-3">Anticiper</h3>
-              <div class="mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+            <div class="text-center mb-4">
+              <h3 class="font-display text-base md:text-lg font-semibold text-neutral-900 mb-1.5 md:mb-3">Anticiper</h3>
+              <div class="mx-auto flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-umbrella text-lg"></i>
               </div>
             </div>
-            <ul class="space-y-2 short:space-y-1 text-sm text-neutral-600">
+            <ul class="space-y-2 text-sm text-neutral-600">
               <li>Si mon état de santé se dégrade brutalement, mes volontés seront-elles respectées ?</li>
               <li>Que se passera-t-il pour ma famille ou mon entreprise en cas d'incapacité prolongée ?</li>
             </ul>
           </div>
           <div class="pt-2 mt-2 border-t border-neutral-100 flex items-start gap-2">
             <i class="fa-solid fa-heart-pulse text-brand-500 mt-1 text-sm"></i>
-            <p class="text-xs text-brand-400 text-justify">Prévoir les conséquences d'un accident ou d'une maladie afin de sécuriser vos proches et votre activité.</p>
+            <p class="text-xs text-brand-400 text-left md:text-justify">Prévoir les conséquences d'un accident ou d'une maladie afin de sécuriser vos proches et votre activité.</p>
           </div>
         </div>
 
-        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-6 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-6 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
           <div>
-            <div class="text-center mb-4 short:mb-2">
-              <h3 class="font-display text-lg font-semibold text-neutral-900 mb-3">Préserver</h3>
-              <div class="mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+            <div class="text-center mb-4">
+              <h3 class="font-display text-base md:text-lg font-semibold text-neutral-900 mb-1.5 md:mb-3">Préserver</h3>
+              <div class="mx-auto flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-house-chimney-user text-lg"></i>
               </div>
             </div>
-            <ul class="space-y-2 short:space-y-1 text-sm text-neutral-600">
+            <ul class="space-y-2 text-sm text-neutral-600">
               <li>Qui prendra le relais si je ne peux plus gérer mon patrimoine ?</li>
               <li>Qui se préoccupera de l'avenir de mes proches ?</li>
               <li>Comment transmettre dans les meilleures conditions ?</li>
@@ -480,31 +480,31 @@
           </div>
           <div class="pt-2 mt-2 border-t border-neutral-100 flex items-start gap-2">
             <i class="fa-solid fa-tree text-brand-500 mt-1 text-sm"></i>
-            <p class="text-xs text-brand-600 text-justify">Organiser la transmission, protéger les actifs et assurer la continuité de la gestion.</p>
+            <p class="text-xs text-brand-600 text-left md:text-justify">Organiser la transmission, protéger les actifs et assurer la continuité de la gestion.</p>
           </div>
         </div>
 
-        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-6 short:p-4 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
+        <div class="reveal group flex flex-col justify-between rounded-2xl border border-neutral-200 p-3 sm:p-5 md:p-6 hover:shadow-soft hover:-translate-y-1 hover:border-brand-200 transition-all">
           <div>
-            <div class="text-center mb-4 short:mb-2">
-              <h3 class="font-display text-lg font-semibold text-neutral-900 mb-3">Vivre sereinement</h3>
-              <div class="mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+            <div class="text-center mb-4">
+              <h3 class="font-display text-base md:text-lg font-semibold text-neutral-900 mb-1.5 md:mb-3">Vivre sereinement</h3>
+              <div class="mx-auto flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-brand-50 text-brand-600 group-hover:bg-brand-500 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-leaf text-lg"></i>
               </div>
             </div>
-            <ul class="space-y-2 short:space-y-1 text-sm text-neutral-600">
+            <ul class="space-y-2 text-sm text-neutral-600">
               <li>Comment prendre les bonnes décisions aujourd'hui pour être serein demain ?</li>
             </ul>
           </div>
           <div class="pt-2 mt-2 border-t border-neutral-100 flex items-start gap-2">
             <i class="fa-solid fa-sun text-brand-500 mt-1 text-sm"></i>
-            <p class="text-xs text-brand-400 text-justify">Un accompagnement global qui relie protection des personnes, patrimoine et stratégie familiale.</p>
+            <p class="text-xs text-brand-400 text-left md:text-justify">Un accompagnement global qui relie protection des personnes, patrimoine et stratégie familiale.</p>
           </div>
         </div>
       </div>
 
-      <div class="text-center mt-10 short:mt-4">
-        <a href="#accompagnement" aria-label="Défiler vers l'ADN" class="inline-flex items-center justify-center w-11 h-11 short:w-8 short:h-8 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
+      <div class="text-center mt-4 sm:mt-8 md:mt-10">
+        <a href="#accompagnement" aria-label="Défiler vers l'ADN" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
           <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
       </div>
@@ -512,8 +512,8 @@
   </section>
 
   <!-- ================= TITRE : ADN ================= -->
-  <section id="accompagnement" class="relative flex flex-col items-center justify-center px-6 py-12 min-h-[calc(100vh-3.5rem)] lg:min-h-[calc(100vh-4rem)] bg-brand-200">
-    <div class="max-w-2xl w-full">
+  <section id="accompagnement" class="vp-section px-6 bg-brand-200">
+    <div class="max-w-2xl w-full mx-auto">
       <div class="flex items-center gap-6">
         <div class="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full bg-white shadow-soft shrink-0">
           <i class="fa-solid fa-dna text-4xl sm:text-5xl lg:text-6xl text-brand-600"></i>
@@ -530,47 +530,47 @@
   </section>
 
   <!-- ================= CONTENU : ADN ================= -->
-  <section id="adn-contenu" class="bg-white py-10 lg:py-12 short:py-5">
+  <section id="adn-contenu" class="vp-section bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <p class="reveal text-left text-justify text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-10 short:mb-4 short:text-sm">
+      <p class="reveal text-left md:text-justify text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-4 sm:mb-8 md:mb-10">
         Notre ADN allie l'éthique, l'expertise et l'engagement humain. Chez IPAP, nous croyons que l'accompagnement patrimonial ne se résume pas à des chiffres ou à des contrats.
         Ambassadrices de <strong class="text-neutral-900">France TUTELLE</strong>, nous soutenons bénévolement les aidants familiaux, tuteurs, curateurs et habilités familiaux.
       </p>
 
-      <div class="grid md:grid-cols-3 gap-6 short:gap-3">
-        <div class="reveal rounded-2xl overflow-hidden border border-neutral-200 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col">
-          <div class="aspect-[4/3] short:aspect-[16/9] overflow-hidden">
+      <div class="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+        <div class="reveal rounded-2xl overflow-hidden border border-neutral-200 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-row md:flex-col">
+          <div class="w-2/5 shrink-0 md:w-full md:aspect-[4/3] overflow-hidden">
             <img src="assets/pedagogie.png" alt="Pédagogie" class="w-full h-full object-cover" loading="lazy">
           </div>
-          <div class="p-6 short:p-3 flex-1">
-            <p class="font-display text-xl font-bold text-brand-600 mb-2 short:text-base short:mb-1">Pédagogie</p>
-            <p class="text-neutral-600 text-sm leading-relaxed text-justify short:text-xs">Nous avons à cœur de rendre accessibles des sujets sensibles et parfois perçus comme complexes. Notre mission : offrir à nos clients la clarté nécessaire pour faire des choix éclairés.</p>
+          <div class="p-3 md:p-5 lg:p-6 flex-1">
+            <p class="font-display text-xl font-bold text-brand-600 mb-2">Pédagogie</p>
+            <p class="text-neutral-600 text-sm leading-relaxed text-left md:text-justify">Nous avons à cœur de rendre accessibles des sujets sensibles et parfois perçus comme complexes. Notre mission : offrir à nos clients la clarté nécessaire pour faire des choix éclairés.</p>
           </div>
         </div>
 
-        <div class="reveal rounded-2xl overflow-hidden border border-neutral-200 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col">
-          <div class="aspect-[4/3] short:aspect-[16/9] overflow-hidden">
+        <div class="reveal rounded-2xl overflow-hidden border border-neutral-200 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-row md:flex-col">
+          <div class="w-2/5 shrink-0 md:w-full md:aspect-[4/3] overflow-hidden">
             <img src="assets/deontologie.png" alt="Déontologie" class="w-full h-full object-cover" loading="lazy">
           </div>
-          <div class="p-6 short:p-3 flex-1">
-            <p class="font-display text-xl font-bold text-brand-600 mb-2 short:text-base short:mb-1">Déontologie</p>
-            <p class="text-neutral-600 text-sm leading-relaxed text-justify short:text-xs">Nous exerçons notre métier avec rigueur et intégrité. Adhérentes à la CNCGP et soumises aux exigences de l'AMF, nous garantissons transparence, loyauté et conformité.</p>
+          <div class="p-3 md:p-5 lg:p-6 flex-1">
+            <p class="font-display text-xl font-bold text-brand-600 mb-2">Déontologie</p>
+            <p class="text-neutral-600 text-sm leading-relaxed text-left md:text-justify">Nous exerçons notre métier avec rigueur et intégrité. Adhérentes à la CNCGP et soumises aux exigences de l'AMF, nous garantissons transparence, loyauté et conformité.</p>
           </div>
         </div>
 
-        <div class="reveal rounded-2xl overflow-hidden border border-neutral-200 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-col">
-          <div class="aspect-[4/3] short:aspect-[16/9] overflow-hidden">
+        <div class="reveal rounded-2xl overflow-hidden border border-neutral-200 hover:shadow-soft hover:-translate-y-1 transition-all flex flex-row md:flex-col">
+          <div class="w-2/5 shrink-0 md:w-full md:aspect-[4/3] overflow-hidden">
             <img src="assets/cooperation.png" alt="Coopération" class="w-full h-full object-cover" loading="lazy">
           </div>
-          <div class="p-6 short:p-3 flex-1">
-            <p class="font-display text-xl font-bold text-brand-600 mb-2 short:text-base short:mb-1">Coopération</p>
-            <p class="text-neutral-600 text-sm leading-relaxed text-justify short:text-xs">Nous privilégions une approche globale et pluridisciplinaire en travaillant en partenariat avec vos conseils habituels : notaires, avocats, experts-comptables.</p>
+          <div class="p-3 md:p-5 lg:p-6 flex-1">
+            <p class="font-display text-xl font-bold text-brand-600 mb-2">Coopération</p>
+            <p class="text-neutral-600 text-sm leading-relaxed text-left md:text-justify">Nous privilégions une approche globale et pluridisciplinaire en travaillant en partenariat avec vos conseils habituels : notaires, avocats, experts-comptables.</p>
           </div>
         </div>
       </div>
 
-      <div class="text-center mt-10 short:mt-4">
-        <a href="#histoire" aria-label="Défiler vers les histoires" class="inline-flex items-center justify-center w-11 h-11 short:w-8 short:h-8 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
+      <div class="text-center mt-4 sm:mt-8 md:mt-10">
+        <a href="#histoire" aria-label="Défiler vers les histoires" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
           <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
       </div>
@@ -578,8 +578,8 @@
   </section>
 
   <!-- ================= TITRE : HISTOIRES ================= -->
-  <section id="histoire" class="relative flex flex-col items-center justify-center px-6 py-12 min-h-[calc(100vh-3.5rem)] lg:min-h-[calc(100vh-4rem)] bg-brand-200">
-    <div class="max-w-2xl w-full">
+  <section id="histoire" class="vp-section px-6 bg-brand-200">
+    <div class="max-w-2xl w-full mx-auto">
       <div class="flex items-center gap-6">
         <div class="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full bg-white shadow-soft shrink-0">
           <i class="fa-solid fa-comments text-4xl sm:text-5xl lg:text-6xl text-brand-600"></i>
@@ -596,11 +596,11 @@
   </section>
 
   <!-- ================= CONTENU : HISTOIRES (CARROUSEL) ================= -->
-  <section id="histoire-contenu" class="bg-neutral-50 py-10 lg:py-12 short:py-5">
+  <section id="histoire-contenu" class="vp-section bg-neutral-50">
     <div class="max-w-4xl mx-auto px-6">
-      <div class="text-center mb-10 short:mb-4 reveal">
-        <h2 class="font-display text-2xl md:text-3xl font-bold text-neutral-900">Histoires partagées</h2>
-        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-4 short:my-2"></div>
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 reveal">
+        <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">Histoires partagées</h2>
+        <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-2 sm:my-4"></div>
         <p class="text-neutral-600">Ils nous ont fait confiance</p>
       </div>
 
@@ -609,11 +609,11 @@
           <div id="testimonial-track" class="testimonial-track">
 
             <div class="testimonial-slide">
-              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14 short:py-6">
-                <div class="mx-auto mb-5 short:mb-3 flex items-center justify-center w-14 h-14 short:w-10 short:h-10 rounded-full bg-white text-brand-600 shadow-sm">
+              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14">
+                <div class="mx-auto mb-5 flex items-center justify-center w-14 h-14 rounded-full bg-white text-brand-600 shadow-sm">
                   <i class="fa-solid fa-quote-left text-xl"></i>
                 </div>
-                <p class="text-lg text-neutral-800 leading-relaxed mb-5 short:text-base short:mb-3">
+                <p class="text-lg text-neutral-800 leading-relaxed mb-5">
                   "Après mon burn-out, j'avais tout laissé tomber... Grâce à l'accompagnement patient et bienveillant d'Alexandra Santerre, j'ai pu remettre ma situation fiscale à plat, retrouver ma sérénité… et recréer une société."
                 </p>
                 <p class="font-semibold text-brand-600">Fabien, 49 ans</p>
@@ -621,11 +621,11 @@
             </div>
 
             <div class="testimonial-slide">
-              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14 short:py-6">
-                <div class="mx-auto mb-5 short:mb-3 flex items-center justify-center w-14 h-14 short:w-10 short:h-10 rounded-full bg-white text-brand-600 shadow-sm">
+              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14">
+                <div class="mx-auto mb-5 flex items-center justify-center w-14 h-14 rounded-full bg-white text-brand-600 shadow-sm">
                   <i class="fa-solid fa-quote-left text-xl"></i>
                 </div>
-                <p class="text-lg text-neutral-800 leading-relaxed mb-5 short:text-base short:mb-3">
+                <p class="text-lg text-neutral-800 leading-relaxed mb-5">
                   "Grâce à l'écoute et à l'accompagnement d'Alexandra, j'ai appris à comprendre mon patrimoine, à ajuster mon train de vie et à envisager l'avenir sereinement."
                 </p>
                 <p class="font-semibold text-brand-600">Sylvie, 55 ans</p>
@@ -633,11 +633,11 @@
             </div>
 
             <div class="testimonial-slide">
-              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14 short:py-6">
-                <div class="mx-auto mb-5 short:mb-3 flex items-center justify-center w-14 h-14 short:w-10 short:h-10 rounded-full bg-white text-brand-600 shadow-sm">
+              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14">
+                <div class="mx-auto mb-5 flex items-center justify-center w-14 h-14 rounded-full bg-white text-brand-600 shadow-sm">
                   <i class="fa-solid fa-quote-left text-xl"></i>
                 </div>
-                <p class="text-lg text-neutral-800 leading-relaxed mb-5 short:text-base short:mb-3">
+                <p class="text-lg text-neutral-800 leading-relaxed mb-5">
                   "N'ayant ni enfants ni famille proche, j'ai trouvé un véritable soutien... C'est une présence de confiance sur laquelle je peux m'appuyer au quotidien."
                 </p>
                 <p class="font-semibold text-brand-600">Honorine, 82 ans</p>
@@ -645,11 +645,11 @@
             </div>
 
             <div class="testimonial-slide">
-              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14 short:py-6">
-                <div class="mx-auto mb-5 short:mb-3 flex items-center justify-center w-14 h-14 short:w-10 short:h-10 rounded-full bg-white text-brand-600 shadow-sm">
+              <div class="bg-brand-100 rounded-2xl text-center py-12 px-6 md:px-14">
+                <div class="mx-auto mb-5 flex items-center justify-center w-14 h-14 rounded-full bg-white text-brand-600 shadow-sm">
                   <i class="fa-solid fa-quote-left text-xl"></i>
                 </div>
-                <p class="text-lg text-neutral-800 leading-relaxed mb-5 short:text-base short:mb-3">
+                <p class="text-lg text-neutral-800 leading-relaxed mb-5">
                   "Alexandra nous a aidés à rédiger un mandat de protection future entièrement adapté... Aujourd'hui, nous sommes rassurés : tout a été pensé pour que nos volontés soient respectées."
                 </p>
                 <p class="font-semibold text-brand-600">Jean-Paul et Martine</p>
@@ -666,11 +666,11 @@
           <i class="fa-solid fa-chevron-right"></i>
         </button>
 
-        <div id="testimonial-dots" class="flex justify-center items-center gap-2 mt-6 short:mt-3"></div>
+        <div id="testimonial-dots" class="flex justify-center items-center gap-2 mt-6"></div>
       </div>
 
-      <div class="text-center mt-10 short:mt-4">
-        <a href="#contact" aria-label="Défiler vers le contact" class="inline-flex items-center justify-center w-11 h-11 short:w-8 short:h-8 rounded-full text-brand-600 hover:bg-brand-100 transition-colors">
+      <div class="text-center mt-4 sm:mt-8 md:mt-10">
+        <a href="#contact" aria-label="Défiler vers le contact" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-100 transition-colors">
           <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
       </div>
@@ -678,18 +678,18 @@
   </section>
 
   <!-- ================= CONTACT ================= -->
-  <section id="contact" class="bg-brand-200 py-12 lg:py-16 short:py-6">
+  <section id="contact" class="vp-section bg-brand-200">
     <div class="max-w-5xl mx-auto px-6">
-      <div class="text-center mb-10 short:mb-4 reveal">
-        <div class="mx-auto flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 short:w-10 short:h-10 rounded-full bg-white shadow-soft mb-4 short:mb-2">
+      <div class="text-center mb-4 sm:mb-8 md:mb-10 reveal">
+        <div class="mx-auto flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-soft mb-4">
           <i class="fa-solid fa-envelope-open-text text-lg lg:text-xl text-brand-600"></i>
         </div>
         <h2 class="font-display text-2xl lg:text-3xl 2xl:text-4xl font-bold text-neutral-900">Nous contacter</h2>
       </div>
 
-      <div class="grid sm:grid-cols-2 gap-6 short:gap-3 max-w-3xl mx-auto">
-        <div class="reveal bg-white rounded-2xl shadow-soft p-8 short:p-4 text-center border-b-4 border-brand-500 hover:-translate-y-1 transition-transform">
-          <img src="assets/AlexandraSanterre.jpeg" alt="Alexandra Santerre" class="w-28 h-28 short:w-16 short:h-16 rounded-full object-cover mx-auto mb-4 short:mb-2 ring-4 ring-brand-100">
+      <div class="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 max-w-3xl mx-auto">
+        <div class="reveal bg-white rounded-2xl shadow-soft p-3 sm:p-6 md:p-8 text-center border-b-4 border-brand-500 hover:-translate-y-1 transition-transform">
+          <img src="assets/AlexandraSanterre.jpeg" alt="Alexandra Santerre" class="w-28 h-28 rounded-full object-cover mx-auto mb-4 ring-4 ring-brand-100">
           <h3 class="font-display text-xl font-bold text-neutral-900">Alexandra Santerre</h3>
           <p class="text-neutral-500 text-sm mb-4">Conseillère en Gestion de Patrimoine</p>
           <div class="space-y-2 text-sm">
@@ -702,8 +702,8 @@
           </div>
         </div>
 
-        <div class="reveal bg-white rounded-2xl shadow-soft p-8 short:p-4 text-center border-b-4 border-brand-500 hover:-translate-y-1 transition-transform">
-          <img src="assets/logo_ipap.png" alt="IPAP consultante" class="w-28 h-28 short:w-16 short:h-16 rounded-full object-cover mx-auto mb-4 short:mb-2 ring-4 ring-brand-100 bg-white p-3">
+        <div class="reveal bg-white rounded-2xl shadow-soft p-3 sm:p-6 md:p-8 text-center border-b-4 border-brand-500 hover:-translate-y-1 transition-transform">
+          <img src="assets/logo_ipap.png" alt="IPAP consultante" class="w-28 h-28 rounded-full object-cover mx-auto mb-4 ring-4 ring-brand-100 bg-white p-3">
           <h3 class="font-display text-xl font-bold text-neutral-900">IPAP consultante</h3>
           <p class="text-neutral-500 text-sm mb-4">Cabinet d'accompagnement Patrimonial</p>
           <div class="space-y-2 text-sm">
