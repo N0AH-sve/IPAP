@@ -143,11 +143,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (nextBtn) nextBtn.addEventListener('click', () => { next(); restartAutoplay(); });
     if (prevBtn) prevBtn.addEventListener('click', () => { prev(); restartAutoplay(); });
 
+    // Deux paires stop/start sont branchées sur le carrousel (souris et
+    // clavier) et se déclenchent souvent ensemble : sans cette garde, chaque
+    // « start » surnuméraire ajoutait un setInterval orphelin, impossible à
+    // arrêter, et le carrousel défilait deux ou trois fois trop vite.
     function startAutoplay() {
+      if (autoplayId) return;
       autoplayId = setInterval(next, 6000);
     }
     function stopAutoplay() {
       if (autoplayId) clearInterval(autoplayId);
+      autoplayId = null;
     }
     function restartAutoplay() {
       stopAutoplay();
