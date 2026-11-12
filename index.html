@@ -123,10 +123,10 @@
   <section id="accueil-contenu" class="vp-section bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
-        <figure class="reveal rounded-2xl overflow-hidden shadow-soft aspect-[685/303] md:aspect-auto md:h-[48vh]">
+        <figure class="reveal rounded-2xl overflow-hidden shadow-soft aspect-[685/303] md:aspect-[1247/1261] md:h-[48vh] md:w-auto md:mx-auto">
           <picture class="block w-full h-full">
             <source media="(min-width: 768px)" srcset="assets/alexandra.png">
-            <img src="assets/croped_alx.png" alt="IPAP - Anticiper" class="w-full h-full object-cover object-center md:object-[82%_74%]" loading="lazy">
+            <img src="assets/croped_alx.png" alt="IPAP - Anticiper" class="w-full h-full object-contain object-center" loading="lazy">
           </picture>
         </figure>
 
@@ -251,7 +251,7 @@
   <section id="missions" class="vp-section bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-4 sm:mb-8 md:mb-10 reveal">
-        <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">Nos missions</h2>
+        <h2 class="font-display text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900">Nos missions &agrave; la carte</h2>
         <div class="w-10 h-1 bg-brand-500 rounded-full mx-auto my-2 sm:my-4"></div>
         <p class="text-neutral-600">Un accompagnement global et sur mesure à chaque étape de votre parcours</p>
       </div>
@@ -318,7 +318,12 @@
         </div>
       </div>
 
-      <div class="text-center mt-4 sm:mt-8 md:mt-10">
+      <p class="reveal text-center text-neutral-600 mt-4 sm:mt-6 md:mt-8">
+        Nos missions pour un accompagnement sur-mesure,
+        <a href="#contact" class="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2 transition-colors">nous consulter pour un devis</a>.
+      </p>
+
+      <div class="text-center mt-3 sm:mt-5 md:mt-6">
         <a href="#parcours-titre" aria-label="Défiler vers le parcours" class="inline-flex items-center justify-center w-11 h-11 rounded-full text-brand-600 hover:bg-brand-50 transition-colors">
           <i class="fa-solid fa-chevron-down text-xl"></i>
         </a>
@@ -335,7 +340,7 @@
         </div>
         <div>
           <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-bold text-neutral-900">Mon Parcours</h2>
-          <p class="mt-3 text-neutral-700 max-w-xl">Une expertise au service de la vulnérabilité</p>
+          <p class="mt-3 text-neutral-700 max-w-xl">Une expertise au service de la <span class="font-semibold text-brand-700">vulnérabilité</span></p>
         </div>
       </div>
     </div>
@@ -357,9 +362,12 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-6 md:gap-12 items-center reveal">
-        <figure class="rounded-2xl overflow-hidden shadow-soft w-1/2 max-w-[18rem] mx-auto aspect-square md:w-full md:max-w-[340px]">
-          <img src="assets/alexandra-portrait.png" alt="Alexandra Santerre" class="w-full h-full object-cover object-top" loading="lazy">
-        </figure>
+        <div class="flex flex-col">
+          <figure class="rounded-2xl overflow-hidden shadow-soft w-1/2 max-w-[18rem] mx-auto aspect-square md:w-full md:max-w-[340px] md:mx-0">
+            <img src="assets/alexandra-portrait.png" alt="Alexandra Santerre" class="w-full h-full object-cover object-top" loading="lazy">
+          </figure>
+          <p class="font-display font-bold text-neutral-900 text-lg mt-4 text-center md:text-left">Alexandra Santerre</p>
+        </div>
 
         <div class="space-y-6">
          
@@ -394,7 +402,6 @@
               </p>
             </div>
           </div>
-          <p class="font-display font-bold text-neutral-900 text-lg">Alexandra Santerre</p>
         </div>
       </div>
 
@@ -543,7 +550,7 @@
     <div class="max-w-6xl mx-auto px-6">
       <p class="reveal text-justify text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-4 sm:mb-8 md:mb-10">
         Notre ADN allie éthique, expertise et engagement humain.<br> Chez IPAP, nous croyons que l'accompagnement patrimonial ne se résume pas à des chiffres ou à des contrats.
-        Ambassadrice de <strong class="text-neutral-900">France TUTELLE</strong>, IPAP soutient bénévolement les aidants familiaux, tuteurs et curateurs.
+        Ambassadrice de <a href="https://www.francetutelle.fr/" target="_blank" rel="noopener" class="font-bold text-brand-600 hover:text-brand-700 underline underline-offset-2 transition-colors">France TUTELLE</a>, IPAP soutient bénévolement les aidants familiaux, tuteurs et curateurs.
       </p>
 
       <div class="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
@@ -563,7 +570,7 @@
           </div>
           <div class="p-3 md:p-5 lg:p-6 flex-1">
             <p class="font-display text-xl font-bold text-brand-600 mb-2">Déontologie</p>
-            <p class="text-neutral-600 text-sm leading-relaxed text-justify">Nous exerçons notre métier avec rigueur et intégrité. Adhérente à la CNCGP et soumise aux exigences de l'AMF, nous garantissons transparence, loyauté et conformité (via <strong class="font-semibold text-brand-700">MustCompliance</strong>).</p>
+            <p class="text-neutral-600 text-sm leading-relaxed text-justify">Nous exerçons notre métier avec rigueur et intégrité. Adhérente à la CNCGP et soumise aux exigences de l'AMF, nous garantissons transparence, loyauté et conformité (via <a href="https://mustcompliance.fr/" target="_blank" rel="noopener" class="font-semibold text-brand-700 hover:text-brand-600 underline underline-offset-2 transition-colors">MustCompliance</a>).</p>
           </div>
         </div>
 
