@@ -88,6 +88,21 @@ body {
   overflow-x: hidden;
 }
 
+/* ===== Nav fixe =====
+   La barre reste collée en haut sur toute la page. Son fond est opaque
+   et elle est promue sur son propre calque de composition : au-dessus de
+   sections en overflow:hidden dont le contenu est mis à l'échelle par
+   transform, un fond translucide avec backdrop-filter laisse le
+   navigateur réafficher un rendu obsolète — la barre semble alors
+   disparaître au fil du défilement. */
+#site-header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
 /* ===== Héro d'accueil ===== */
 #accueil-titre {
   background-image: linear-gradient(rgba(10, 20, 12, 0.55), rgba(10, 20, 12, 0.55)),
